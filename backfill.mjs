@@ -9,7 +9,7 @@
  *
  * The source repo is only ever READ (git log / ls-tree / cat-file / archive)
  * plus `git worktree add|remove` of one scratch worktree at
- * <src>/.claude/worktrees/_snapshots-build/, where all building happens.
+ * <src>/worktrees/_snapshots-build/, where all building happens.
  *
  * Run `node backfill.mjs --help` for flags. Works on Node >= 18; the builds it
  * spawns need Node >= 20 and use ~/.nvm/versions/node/v22* (or $NODE22).
@@ -198,7 +198,7 @@ if (!existsSync(path.join(opt.src, ".git")) && !gitTry("rev-parse", "--git-dir")
 }
 opt.src = realpathSync(opt.src);
 const GIT_COMMON = path.resolve(opt.src, git("rev-parse", "--git-common-dir").trim());
-const WT = path.join(opt.src, ".claude", "worktrees", "_snapshots-build");
+const WT = path.join(opt.src, "worktrees", "_snapshots-build");
 
 if (opt.clean) {
   if (existsSync(WT)) {

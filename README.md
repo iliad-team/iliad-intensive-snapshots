@@ -71,7 +71,7 @@ slug folder and run the script again.
 
 The script only reads the source repo, using `git log`, `ls-tree`, `cat-file`
 and `archive`, and `git worktree add` for one scratch worktree at
-`<src>/.claude/worktrees/_snapshots-build/`. That path is gitignored, and it
+`<src>/worktrees/_snapshots-build/`. That path is gitignored, and it
 has to sit inside the repo: Turbopack panics when a symlinked `node_modules`
 points outside its root. The worktree's `node_modules` are symlinks to the
 source repo's. It is reused between runs and moved to `--ref` at the start of
