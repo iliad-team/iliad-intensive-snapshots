@@ -1,0 +1,12 @@
+{
+  "name": "iliad-snapshots",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Pre-rendered HTML of every historical version of every iliad-intensive worksheet page, for the site's /dev/diff view.",
+  "type": "module",
+  "engines": { "node": ">=18" },
+  "scripts": {
+    "backfill": "node backfill.mjs",
+    "dry-run": "node backfill.mjs --dry-run"
+  }
+}

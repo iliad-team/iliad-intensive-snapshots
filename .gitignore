@@ -1,0 +1,5 @@
+# per-batch build logs (build-content / next build / strip-hydration output)
+.logs/
+# half-written files from an interrupted save
+*.tmp
+node_modules/
