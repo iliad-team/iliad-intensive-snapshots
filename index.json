@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-24T02:41:00.047Z",
+  "generatedAt": "2026-09-24T08:35:31.362Z",
   "pipelineCommit": "15b255d650ad19292ad9d38ab5df7e1266cd039b",
   "pages": {
     "abstractions-and-latents": {
@@ -4264,6 +4264,34 @@
     "policy-gradients-misgeneralization": {
       "versions": [
         {
+          "tree": "112d61314cd4b992217daee922ebc2b019c503bb",
+          "status": "failed",
+          "error": "next build failed:\nError occurred prerendering page \"/page/policy-gradients-misgeneralization\". Read more: https://nextjs.org/docs/messages/prerender-error\nError: Expected component `NotebookNoSol` to be defined: you likely forgot to import, pass, or provide it.\n    at ignore-listed frames {\n  digest: '3723433814'\n}",
+          "pipeline": "15b255d650ad19292ad9d38ab5df7e1266cd039b",
+          "commits": [
+            {
+              "sha": "1833e91d422ac647edc30c4286c8ab835b7d4ff3",
+              "date": "2026-09-23T22:54:17-04:00",
+              "subject": "[D.2] Bring the pottery-shop game (play.html) along, served like an image",
+              "author": "David Quarel"
+            }
+          ]
+        },
+        {
+          "tree": "7f11a6ee403c2f7915827d37e6c1c4b6780a4daf",
+          "status": "failed",
+          "error": "next build failed:\nError occurred prerendering page \"/page/policy-gradients-misgeneralization\". Read more: https://nextjs.org/docs/messages/prerender-error\nError: Expected component `NotebookNoSol` to be defined: you likely forgot to import, pass, or provide it.\n    at ignore-listed frames {\n  digest: '3723433814'\n}",
+          "pipeline": "15b255d650ad19292ad9d38ab5df7e1266cd039b",
+          "commits": [
+            {
+              "sha": "fd2c53f62d30bacf0c75b2b7ebf05b88d0c33078",
+              "date": "2026-09-23T22:39:54-04:00",
+              "subject": "[D.2] Move the goal-misgeneralisation notebook in from iliad-intensive-D.2",
+              "author": "David Quarel"
+            }
+          ]
+        },
+        {
           "tree": "5d783646d53e7adb4ad9ccc9e5bbefb4d22ac92a",
           "status": "ok",
           "pipeline": "c1e5b24a037ce82de54e17b259e628394a11cda7",
@@ -5030,6 +5058,19 @@
     },
     "qft": {
       "versions": [
+        {
+          "tree": "c06a18fd297d0872489ff2d777f7c3f8b07f934b",
+          "status": "ok",
+          "pipeline": "15b255d650ad19292ad9d38ab5df7e1266cd039b",
+          "commits": [
+            {
+              "sha": "d0bb1db6bd3cdfca439d260036d39501897a1d55",
+              "date": "2026-09-23T22:55:37-04:00",
+              "subject": "qft: write the long exponents in the push-forward derivation as exp[…]",
+              "author": "David Quarel"
+            }
+          ]
+        },
         {
           "tree": "c2b9608a1f5e1f0a880cfa934bc26abc7506e023",
           "status": "ok",
@@ -7376,6 +7417,12 @@
           "commits": [
             {
               "sha": "2ebbf6f632e2ef7a6f669ffafbbc492edaceb261",
+              "date": "2026-09-23T21:36:10-04:00",
+              "subject": "[E.3] Move the compact-proofs notebook in from iliad-intensive-E.3",
+              "author": "David Quarel"
+            },
+            {
+              "sha": "c7712bc124ea3f14d1973c54909e633a9f71c5be",
               "date": "2026-09-23T21:36:10-04:00",
               "subject": "[E.3] Move the compact-proofs notebook in from iliad-intensive-E.3",
               "author": "David Quarel"
