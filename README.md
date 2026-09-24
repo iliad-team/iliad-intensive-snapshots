@@ -38,15 +38,29 @@ Requirements: the source repo checked out next to this folder with
 Live. The script itself runs on any Node ≥ 18. The builds it spawns need
 Node ≥ 20: it picks `~/.nvm/versions/node/v22*`, or set `NODE22=/path/to/bin`.
 
+`./setup.sh` does all of this: it clones (or fetches) the source repo next to
+this folder, runs that repo's own `./setup.sh`, checks the result and ends with
+a dry run. On top of that repo's setup it installs `texlive-science`
+(`stmaryrd`, `physics`), which the source repo dropped on 2026-07-28 after
+sheets had used it, and fetches every historical LFS object (about 50 MB), so
+old versions get their real figures instead of pointer files.
+
 ```sh
 cd ~/Dropbox/ILIAD/iliad-intensive-snapshots
-node backfill.mjs --dry-run            # per-slug table: versions, built, failed, to build
-node backfill.mjs --limit 5            # trial: the 5 newest unbuilt versions
-node backfill.mjs                      # everything (resumable; Ctrl-C is safe)
-node backfill.mjs --retry-failed       # after a pipeline fix: retry recorded failures
-node backfill.mjs --only aixi,qft      # just some slugs
-node backfill.mjs --clean              # remove the scratch worktree
+./setup.sh                             # one-time: source repo, TeX Live, Node 22, npm deps
+./run.sh help                          # all commands and flags
+./run.sh status                        # per-slug table: versions, built, failed, to build
+./run.sh trial                         # the 5 newest unbuilt versions (trial [N] for more)
+./run.sh build                         # everything (resumable; Ctrl-C is safe)
+./run.sh retry                         # after a pipeline fix: retry recorded failures
+./run.sh build --only aixi,qft         # just some slugs
+./run.sh failures [slug]               # recorded failures, one line each
+./run.sh log                           # tail of the newest batch's logs
+./run.sh clean                         # remove the scratch worktree
 ```
+
+`run.sh` loads Node 22 from nvm itself, and passes any flags after the command
+through to `backfill.mjs`, which you can also run directly with `node`.
 
 | flag | |
 |---|---|
@@ -55,7 +69,7 @@ node backfill.mjs --clean              # remove the scratch worktree
 | `--only a,b` | only these slugs |
 | `--limit N` | at most N versions this run |
 | `--batch N` | versions per `next build` (default 25) |
-| `--jobs N` | parallel sheets inside `build-content` (default: CPU count) |
+| `--jobs N` | parallel sheets inside `build-content` (default: usable CPUs; a cgroup CPU quota counts, so a 13.6-CPU container on a 128-core host gets 13) |
 | `--retry-failed` | also retry versions recorded as failed |
 | `--dry-run` | enumerate only |
 | `--clean` | remove the scratch worktree and exit |
@@ -80,7 +94,10 @@ each run. Nothing in the main checkout's working tree is touched.
 For each batch:
 
 1. `git archive <tree>` into `tex/<slug>--<tree10>/`. LFS pointers are
-   replaced from the local LFS store when the object exists there.
+   replaced from the local LFS store when the object exists there. Top-level
+   `tex/` files from the version's earliest commit that today's `tex/` lacks
+   are restored too, for example `commenting.sty`, which old sheets loaded as
+   `../commenting`. Today's pipeline files are never overwritten.
 2. Fix up the frontmatter: drop every key that today's `KNOWN_FRONT_KEYS`
    (`scripts/tex2mdx/shims.mjs`) does not know, including `cluster`, `day` and
    `learningOutcomes` with their continuation lines, and add `unlisted: true`.
@@ -109,7 +126,9 @@ Retries are grouped by sty, and that sty is written into the scratch
 worktree's `tex/iliad.sty` for the batch. MDX failures from `next build` are
 not retried, since a sty cannot fix them.
 
-Per-batch logs of every subprocess go to `.logs/` (gitignored).
+Per-batch logs of every subprocess go to `.logs/<run start time>/` (gitignored).
+A batch whose `strip-hydration` fails or is interrupted saves nothing, so its
+versions are rebuilt on the next run.
 
 ## Limitations (v1)
 

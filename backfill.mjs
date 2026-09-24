@@ -27,7 +27,8 @@ import { fileURLToPath } from "node:url";
 const HERE = path.dirname(fileURLToPath(import.meta.url));
 const SNAP = HERE;                         // output lives next to the script
 const INDEX = path.join(SNAP, "index.json");
-const LOGS = path.join(SNAP, ".logs");
+// one folder per run, so a later run never overwrites the logs of an earlier one
+const LOGS = path.join(SNAP, ".logs", new Date().toISOString().slice(0, 19).replace(/:/g, "-"));
 
 // ============================================================ arguments ====
 const HELP = `
@@ -40,20 +41,30 @@ usage: node backfill.mjs [flags]
   --only <a,b,…>     only these slugs
   --limit N          build at most N versions this run (trial runs)
   --batch N          versions per \`next build\` (default 25)
-  --jobs N           parallel sheets inside build-content (default: CPU count)
+  --jobs N           parallel sheets inside build-content (default: usable CPUs, cgroup quota respected)
   --retry-failed     also retry versions index.json records as failed
   --dry-run          enumerate only; print per-slug table of built / to-build
   --clean            remove the scratch worktree and exit
   --help             this text
 
 Output: <slug>/<tree>.html and index.json in ${SNAP}
-Logs of each build step: .logs/
+Logs of each build step: .logs/<run start time>/
 `;
+
+/** CPUs this process may actually use: a cgroup quota (containers) caps what os.cpus() reports. */
+function effectiveCpus() {
+  const n = os.availableParallelism?.() ?? os.cpus().length;
+  try {
+    const [quota, period] = readFileSync("/sys/fs/cgroup/cpu.max", "utf8").trim().split(/\s+/);
+    if (quota !== "max") return Math.max(1, Math.min(n, Math.floor(Number(quota) / Number(period))));
+  } catch { /* no cgroup v2 quota */ }
+  return n;
+}
 
 const argv = process.argv.slice(2);
 const opt = {
   src: path.resolve(HERE, "../iliad-intensive"), ref: "HEAD", only: null, limit: Infinity,
-  batch: 25, jobs: os.cpus().length, retryFailed: false, dryRun: false, clean: false,
+  batch: 25, jobs: effectiveCpus(), retryFailed: false, dryRun: false, clean: false,
 };
 for (let i = 0; i < argv.length; i++) {
   const a = argv[i];
@@ -451,6 +462,9 @@ function cleanStrays() {
   scan(path.join(WT, "public", "uploads"));
   cleanAliases([...stray]);
   execFileSync("git", ["-C", WT, "checkout", "--", "tex/iliad.sty"], { stdio: "ignore" });
+  // shared files restoreSharedTex() put back: untracked, directly in tex/
+  const others = execFileSync("git", ["-C", WT, "ls-files", "--others", "--exclude-standard", "--", "tex"], { encoding: "utf8" });
+  for (const f of others.split("\n")) if (/^tex\/[^/]+$/.test(f)) rmSync(path.join(WT, f), { force: true });
 }
 
 /** LFS pointers in an archive → the real object from the local LFS store, when present. */
@@ -499,7 +513,26 @@ async function extract(v) {
   // right now — pass 1: today's; pass 2: the one the version was written for.
   copyFileSync(path.join(WT, "tex", "iliad.sty"), path.join(dest, "iliad.sty"));
   for (const junk of [".build-hash"]) rmSync(path.join(dest, junk), { force: true });
+  restoreSharedTex(v);
   return fixFrontmatter(dest);
+}
+
+/**
+ * Old sheets also load shared files that sat in tex/ at the time and are gone
+ * today (`\usepackage{../commenting}`). Put back every top-level tex/ file of
+ * the version's earliest commit that today's tex/ lacks. Never overwrites a
+ * pipeline file; cleanStrays() removes them again (they are untracked).
+ */
+function restoreSharedTex(v) {
+  const ls = gitTry("ls-tree", v.earliest.sha, "tex/");
+  if (!ls) return;
+  for (const line of ls.split("\n")) {
+    const m = /^\d+ blob ([0-9a-f]+)\ttex\/([^/]+)$/.exec(line);
+    if (!m) continue;
+    const to = path.join(WT, "tex", m[2]);
+    if (existsSync(to)) continue;
+    writeFileSync(to, execFileSync("git", ["-C", opt.src, "cat-file", "blob", m[1]], { maxBuffer: 1 << 28 }));
+  }
 }
 
 // ============================================================ build ========
@@ -531,8 +564,11 @@ function parseFailures(out, aliases) {
 
 /** One short line out of a long error. */
 function reason(err) {
+  // a pdflatex error is the root cause; the converter's complaints follow from it
+  const tex = /\npdflatex \(main\.log\):\n(.+)/.exec(err);
+  if (tex) return `pdflatex: ${tex[1].trim()}`.slice(0, 160);
   const lines = err.split("\n").map((l) => l.trim()).filter(Boolean);
-  const mdx = lines.findIndex((l) => /error compiling MDX/.test(l));
+  const mdx =lines.findIndex((l) => /error compiling MDX/.test(l));
   if (mdx >= 0 && lines[mdx + 1]) return `MDX: ${lines[mdx + 1]}`.slice(0, 160);
   const e = lines.findIndex((l) => /^ERROR/.test(l));
   if (e >= 0 && /^- /.test(lines[e + 1] ?? "")) return lines[e + 1].replace(/^-\s*/, "").replace(/\s{2,}/g, "  ").slice(0, 160);
@@ -662,7 +698,12 @@ async function buildBatch(batch, label) {
     // 4. strip hydration (what the live site serves) + save
     ui.setPhase(`${label}: saving`);
     const strip = await run(path.join(NODE_BIN, "node"), ["scripts/strip-hydration.mjs"], { cwd: WT, env: buildEnv(), log: `${logBase}-strip.log` });
-    if (strip.code !== 0) ui.log(c.yellow(`  ⚠ strip-hydration failed (${logBase}-strip.log) — saving the unstripped pages`));
+    if (interrupted) return res;
+    // Unstripped pages are 2–3× the size: save nothing, so the next run rebuilds them.
+    if (strip.code !== 0) {
+      ui.log(c.yellow(`  ⚠ strip-hydration failed (${logBase}-strip.log) — ${built.length} version${built.length === 1 ? "" : "s"} left unbuilt; run again to retry`));
+      return res;
+    }
     for (const a of built) {
       const v = byAlias.get(a);
       const key = `${v.slug}@${v.tree}`;
