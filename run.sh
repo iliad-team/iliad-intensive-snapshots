@@ -39,7 +39,14 @@ backfill flags (after the command, passed through to backfill.mjs)
   --jobs N            parallel sheets in conversion (default: usable CPUs, $(cpus) here)
   --limit N           at most N versions this run
   --src <path>        source repo                   (default ../iliad-intensive)
-  --ref <rev>         pipeline revision             (default: source repo HEAD)
+  --ref <rev>         pipeline revision             (default: the source repo's origin/main)
+  --no-sync           skip the sync below (offline, or on purpose)
+
+status / trial / build / retry first SYNC, so a local run matches what CI
+(.github/workflows/update.yml) produces: this repo is fast-forwarded to
+origin, the source repo is fetched, and pages are built with origin/main's
+pipeline, not whatever the source checkout happens to be on. CI renders new
+versions hourly on its own; build locally only to try something out.
 
 examples
   ./run.sh status
@@ -66,16 +73,54 @@ use_node() {
 }
 backfill() { use_node; exec node backfill.mjs "$@"; }
 
+# Bring both repos up to what CI sees, and default the pipeline to the source
+# repo's origin/main. Sets ARGS (the backfill flags, --no-sync removed, --ref
+# added unless given). Without this a local run builds with a source checkout
+# nothing ever pulls, and races CI for the same versions with older output.
+ARGS=()
+sync() {
+  local src="$HERE/../iliad-intensive" prev="" a nosync=0 ref=""
+  ARGS=()
+  for a in "$@"; do
+    if [ "$a" = --no-sync ]; then nosync=1; else ARGS+=("$a"); fi
+    [ "$prev" = --src ] && src="$a"
+    [ "$prev" = --ref ] && ref="$a"
+    prev="$a"
+  done
+  if [ "$nosync" = 0 ]; then
+    echo "sync: pulling this repo, fetching the source repo (--no-sync to skip)"
+    if ! git -C "$HERE" pull -q --ff-only; then
+      echo "✗ could not fast-forward this repo to origin. Uncommitted pages from an earlier" >&2
+      echo "  local run? CI has committed its own copies since: see git status, and" >&2
+      echo "  git checkout -- index.json && git clean -f -- '*/*.html' to drop them." >&2
+      exit 1
+    fi
+    git -C "$src" fetch -q origin || { echo "✗ could not fetch $src (offline? --no-sync)" >&2; exit 1; }
+  fi
+  if [ -z "$ref" ]; then
+    ref="$(git -C "$src" symbolic-ref -q --short refs/remotes/origin/HEAD || echo origin/main)"
+    ARGS+=(--ref "$ref")
+  else
+    echo "⚠ --ref $ref: pages built with a pipeline CI does not use; don't commit them unless that is the point"
+  fi
+  # The builds borrow the source checkout's node_modules, installed for ITS
+  # commit: if the pipeline commit's lockfiles differ, they may not match.
+  if ! git -C "$src" diff --quiet HEAD "$ref" -- package-lock.json scripts/tex2mdx/package-lock.json 2>/dev/null; then
+    echo "⚠ $ref changed the npm dependencies since the source checkout's commit. Update it first:" >&2
+    echo "  (cd $src && git pull --ff-only && npm ci && npm ci --prefix scripts/tex2mdx)" >&2
+  fi
+}
+
 cmd="${1:-help}"
 [ $# -gt 0 ] && shift
 case "$cmd" in
-  status)   backfill --dry-run "$@" ;;
+  status)   sync "$@"; backfill --dry-run "${ARGS[@]}" ;;
   trial)
     n=5
     if [[ "${1:-}" =~ ^[0-9]+$ ]]; then n="$1"; shift; fi
-    backfill --limit "$n" "$@" ;;
-  build)    backfill "$@" ;;
-  retry)    backfill --retry-failed "$@" ;;
+    sync "$@"; backfill --limit "$n" "${ARGS[@]}" ;;
+  build)    sync "$@"; backfill "${ARGS[@]}" ;;
+  retry)    sync "$@"; backfill --retry-failed "${ARGS[@]}" ;;
   clean)    backfill --clean "$@" ;;
   failures)
     use_node

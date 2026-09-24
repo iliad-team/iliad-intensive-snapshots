@@ -62,10 +62,19 @@ cd ~/Dropbox/ILIAD/iliad-intensive-snapshots
 `run.sh` loads Node 22 from nvm itself, and passes any flags after the command
 through to `backfill.mjs`, which you can also run directly with `node`.
 
+`status`, `trial`, `build` and `retry` **sync first**: they fast-forward this
+repo to origin, fetch the source repo, and build with the source repo's
+`origin/main` rather than whatever its checkout is on (nothing ever pulls that
+checkout). A local run then produces what CI would. CI already renders new
+versions hourly (below), so build locally only to try something out, such as
+a pipeline fix. `--no-sync` skips the sync, and an explicit `--ref` prints a
+warning. If the lockfiles at `origin/main` differ from the source checkout's,
+the sync says to update that checkout and rerun `npm ci`.
+
 | flag | |
 |---|---|
 | `--src <path>` | source repo (default `../iliad-intensive`) |
-| `--ref <rev>` | pipeline revision to build with (default: source repo `HEAD`) |
+| `--ref <rev>` | pipeline revision to build with (`backfill.mjs` default: source repo `HEAD`; `run.sh` default: `origin/main`) |
 | `--only a,b` | only these slugs |
 | `--limit N` | at most N versions this run |
 | `--batch N` | versions per `next build` (default 25) |

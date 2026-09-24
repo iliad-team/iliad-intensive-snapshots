@@ -315,6 +315,11 @@ function writeIndex(pages, results) {
     const versions = [...byTree.values()].sort((a, b) => (b.commits[0]?.date ?? "").localeCompare(a.commits[0]?.date ?? ""));
     if (versions.length) out.pages[slug] = { versions };
   }
+  // Nothing but the timestamp would change: leave the file alone, so a run
+  // with nothing to build does not dirty the checkout (and block the next
+  // pull of CI's commits).
+  const same = (x) => JSON.stringify({ ...x, generatedAt: null });
+  if (same(out) === same(INDEX_DATA)) return;
   const tmp = `${INDEX}.tmp`;
   writeFileSync(tmp, JSON.stringify(out, null, 2) + "\n");
   renameSync(tmp, INDEX);
