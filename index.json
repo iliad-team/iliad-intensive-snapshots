@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-09-24T19:52:22.117Z",
-  "pipelineCommit": "dbd8f8b3ad0e8277273d1f33f303f225a8cf62b0",
+  "generatedAt": "2026-09-24T20:10:32.215Z",
+  "pipelineCommit": "6edb60fa1845d74ec686c278462a4609848d0306",
   "pages": {
     "abstractions-and-latents": {
       "versions": [
@@ -517,6 +517,19 @@
     },
     "aixi": {
       "versions": [
+        {
+          "tree": "6c18876ab73fa10a65e88d2726845f7acbdf49da",
+          "status": "ok",
+          "pipeline": "6edb60fa1845d74ec686c278462a4609848d0306",
+          "commits": [
+            {
+              "sha": "7b4416185964fc08d0725385290d49923d89f928",
+              "date": "2026-09-24T16:06:57-04:00",
+              "subject": "Break the six display equations that overflow the column",
+              "author": "David Quarel"
+            }
+          ]
+        },
         {
           "tree": "cbe7d8e222285f784d196f545949422ff9b13be8",
           "status": "ok",
@@ -4469,6 +4482,19 @@
     "power-seeking": {
       "versions": [
         {
+          "tree": "878091797e52d6c008b6ba19f085252f9cb03c20",
+          "status": "ok",
+          "pipeline": "6edb60fa1845d74ec686c278462a4609848d0306",
+          "commits": [
+            {
+              "sha": "7b4416185964fc08d0725385290d49923d89f928",
+              "date": "2026-09-24T16:06:57-04:00",
+              "subject": "Break the six display equations that overflow the column",
+              "author": "David Quarel"
+            }
+          ]
+        },
+        {
           "tree": "8dfbcfda5b1744647325e855081b82c083fc3383",
           "status": "ok",
           "pipeline": "15b255d650ad19292ad9d38ab5df7e1266cd039b",
@@ -4736,6 +4762,19 @@
     },
     "preferences-to-rewards": {
       "versions": [
+        {
+          "tree": "0c9dcfbfecc538f89c3efc0a7ce6eb884179d253",
+          "status": "ok",
+          "pipeline": "6edb60fa1845d74ec686c278462a4609848d0306",
+          "commits": [
+            {
+              "sha": "7b4416185964fc08d0725385290d49923d89f928",
+              "date": "2026-09-24T16:06:57-04:00",
+              "subject": "Break the six display equations that overflow the column",
+              "author": "David Quarel"
+            }
+          ]
+        },
         {
           "tree": "1c293e85dc9f497ad0377e38f68a84f43088ef91",
           "status": "ok",
@@ -5384,6 +5423,19 @@
     "reinforcement-learning": {
       "versions": [
         {
+          "tree": "4d680b0001eacf59f7a6423f6c0f042965630c75",
+          "status": "ok",
+          "pipeline": "6edb60fa1845d74ec686c278462a4609848d0306",
+          "commits": [
+            {
+              "sha": "7b4416185964fc08d0725385290d49923d89f928",
+              "date": "2026-09-24T16:06:57-04:00",
+              "subject": "Break the six display equations that overflow the column",
+              "author": "David Quarel"
+            }
+          ]
+        },
+        {
           "tree": "e16e53fc9dd73028ebadf7c00816b91d30023516",
           "status": "ok",
           "pipeline": "15b255d650ad19292ad9d38ab5df7e1266cd039b",
@@ -5710,6 +5762,19 @@
     },
     "singular-learning-theory": {
       "versions": [
+        {
+          "tree": "0537aa0c81952cb9efd350a6611701c706645d3d",
+          "status": "ok",
+          "pipeline": "6edb60fa1845d74ec686c278462a4609848d0306",
+          "commits": [
+            {
+              "sha": "7b4416185964fc08d0725385290d49923d89f928",
+              "date": "2026-09-24T16:06:57-04:00",
+              "subject": "Break the six display equations that overflow the column",
+              "author": "David Quarel"
+            }
+          ]
+        },
         {
           "tree": "7ac6011edf004461255b131e4e9431163d780e0a",
           "status": "ok",
