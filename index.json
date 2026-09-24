@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-09-24T08:35:31.362Z",
-  "pipelineCommit": "15b255d650ad19292ad9d38ab5df7e1266cd039b",
+  "generatedAt": "2026-09-24T17:59:30.470Z",
+  "pipelineCommit": "c076a94f0318cd7581827f4806858f5fd0fdfa7f",
   "pages": {
     "abstractions-and-latents": {
       "versions": [
@@ -1887,6 +1887,12 @@
               "date": "2026-09-22T16:24:59-04:00",
               "subject": "Port the condensation teaching day (C.4)",
               "author": "Satya Benson"
+            },
+            {
+              "sha": "1b57d01371b3e1fc27b36c780a67dc04b8ad1395",
+              "date": "2026-09-22T16:24:59-04:00",
+              "subject": "Port the condensation teaching day (C.4)",
+              "author": "Satya Benson"
             }
           ]
         }
@@ -1901,6 +1907,12 @@
           "commits": [
             {
               "sha": "8e4b3d605094b3d0ef3e9b5e0ee42ed73dac9e7d",
+              "date": "2026-09-22T16:24:59-04:00",
+              "subject": "Port the condensation teaching day (C.4)",
+              "author": "Satya Benson"
+            },
+            {
+              "sha": "1b57d01371b3e1fc27b36c780a67dc04b8ad1395",
               "date": "2026-09-22T16:24:59-04:00",
               "subject": "Port the condensation teaching day (C.4)",
               "author": "Satya Benson"
@@ -1921,6 +1933,12 @@
               "date": "2026-09-22T16:24:59-04:00",
               "subject": "Port the condensation teaching day (C.4)",
               "author": "Satya Benson"
+            },
+            {
+              "sha": "1b57d01371b3e1fc27b36c780a67dc04b8ad1395",
+              "date": "2026-09-22T16:24:59-04:00",
+              "subject": "Port the condensation teaching day (C.4)",
+              "author": "Satya Benson"
             }
           ]
         }
@@ -1938,6 +1956,12 @@
               "date": "2026-09-22T16:24:59-04:00",
               "subject": "Port the condensation teaching day (C.4)",
               "author": "Satya Benson"
+            },
+            {
+              "sha": "1b57d01371b3e1fc27b36c780a67dc04b8ad1395",
+              "date": "2026-09-22T16:24:59-04:00",
+              "subject": "Port the condensation teaching day (C.4)",
+              "author": "Satya Benson"
             }
           ]
         }
@@ -1952,6 +1976,12 @@
           "commits": [
             {
               "sha": "8e4b3d605094b3d0ef3e9b5e0ee42ed73dac9e7d",
+              "date": "2026-09-22T16:24:59-04:00",
+              "subject": "Port the condensation teaching day (C.4)",
+              "author": "Satya Benson"
+            },
+            {
+              "sha": "1b57d01371b3e1fc27b36c780a67dc04b8ad1395",
               "date": "2026-09-22T16:24:59-04:00",
               "subject": "Port the condensation teaching day (C.4)",
               "author": "Satya Benson"
@@ -4264,6 +4294,38 @@
     "policy-gradients-misgeneralization": {
       "versions": [
         {
+          "tree": "f60764fd74697d86d654fefe0e47f37362fe07a4",
+          "status": "ok",
+          "pipeline": "c076a94f0318cd7581827f4806858f5fd0fdfa7f",
+          "commits": [
+            {
+              "sha": "862fbdf89d8cb5c36a45498aeed7798ffd7cce28",
+              "date": "2026-09-24T18:56:13+01:00",
+              "subject": "Merge pull request #174 from iliad-team/notebooks-d2-claude",
+              "author": "David Quarel"
+            },
+            {
+              "sha": "c47f39e1d650fff6bffba28bf2634282b2a5c68f",
+              "date": "2026-09-24T11:32:42-04:00",
+              "subject": "[D.2] Note in the master that LivePlot should come from ARENA-education/liveplot",
+              "author": "David Quarel"
+            }
+          ]
+        },
+        {
+          "tree": "42da801f8ca0b24e0d36b05ad6d95fce92ffacf3",
+          "status": "ok",
+          "pipeline": "c076a94f0318cd7581827f4806858f5fd0fdfa7f",
+          "commits": [
+            {
+              "sha": "861d5257251cb47d82a9760592921c79c08c892a",
+              "date": "2026-09-24T10:17:44-04:00",
+              "subject": "[D.2] Serve the notebook's environment figure from fig/, not the author's repo",
+              "author": "David Quarel"
+            }
+          ]
+        },
+        {
           "tree": "112d61314cd4b992217daee922ebc2b019c503bb",
           "status": "failed",
           "error": "next build failed:\nError occurred prerendering page \"/page/policy-gradients-misgeneralization\". Read more: https://nextjs.org/docs/messages/prerender-error\nError: Expected component `NotebookNoSol` to be defined: you likely forgot to import, pass, or provide it.\n    at ignore-listed frames {\n  digest: '3723433814'\n}",
@@ -5063,6 +5125,12 @@
           "status": "ok",
           "pipeline": "15b255d650ad19292ad9d38ab5df7e1266cd039b",
           "commits": [
+            {
+              "sha": "f1f03ea8bc0a408de74791354b5432cfdd44e979",
+              "date": "2026-09-24T13:32:43-04:00",
+              "subject": "Merge pull request #172 from iliad-team/qft-equation-breaks-claude",
+              "author": "David Quarel"
+            },
             {
               "sha": "d0bb1db6bd3cdfca439d260036d39501897a1d55",
               "date": "2026-09-23T22:55:37-04:00",
@@ -5997,6 +6065,19 @@
               "date": "2026-08-20T14:40:30+01:00",
               "subject": "Merge branch 'tex2mdx-solution-letters-claude' into errata-b.3-dln-svd-claude",
               "author": "David Quarel"
+            }
+          ]
+        },
+        {
+          "tree": "94791119499c741d8439d7614fcf293faa5ed791",
+          "status": "ok",
+          "pipeline": "c076a94f0318cd7581827f4806858f5fd0fdfa7f",
+          "commits": [
+            {
+              "sha": "b5f5c108dbf920ecb5ca4f1cd244bebc2cc6cb29",
+              "date": "2026-08-20T08:24:00-07:00",
+              "subject": "Rewrite SLT summary in iambic pentameter",
+              "author": "museiliad-bot"
             }
           ]
         },
@@ -7020,6 +7101,19 @@
           ]
         },
         {
+          "tree": "83916dd48803204857bedd459fa7a79530ad3bc8",
+          "status": "ok",
+          "pipeline": "c076a94f0318cd7581827f4806858f5fd0fdfa7f",
+          "commits": [
+            {
+              "sha": "178117d8bfba85135e4f2c9d658af01f055a2f5a",
+              "date": "2026-09-14T11:58:54+01:00",
+              "subject": "training-dynamics: sync readings with source repo (f694e01)",
+              "author": "Guillaume Corlouer"
+            }
+          ]
+        },
+        {
           "tree": "d7732caf8b1f280904c68ba89d1115bacb0b49d9",
           "status": "ok",
           "pipeline": "c1e5b24a037ce82de54e17b259e628394a11cda7",
@@ -7415,6 +7509,12 @@
           "error": "next build failed:\nError occurred prerendering page \"/page/worst-case-interp\". Read more: https://nextjs.org/docs/messages/prerender-error\nError: Expected component `NotebookNoSol` to be defined: you likely forgot to import, pass, or provide it.\n    at ignore-listed frames {\n  digest: '3114312112'\n}",
           "pipeline": "15b255d650ad19292ad9d38ab5df7e1266cd039b",
           "commits": [
+            {
+              "sha": "862fbdf89d8cb5c36a45498aeed7798ffd7cce28",
+              "date": "2026-09-24T18:56:13+01:00",
+              "subject": "Merge pull request #174 from iliad-team/notebooks-d2-claude",
+              "author": "David Quarel"
+            },
             {
               "sha": "2ebbf6f632e2ef7a6f669ffafbbc492edaceb261",
               "date": "2026-09-23T21:36:10-04:00",
