@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-09-24T17:59:30.470Z",
-  "pipelineCommit": "c076a94f0318cd7581827f4806858f5fd0fdfa7f",
+  "generatedAt": "2026-09-24T19:52:22.117Z",
+  "pipelineCommit": "dbd8f8b3ad0e8277273d1f33f303f225a8cf62b0",
   "pages": {
     "abstractions-and-latents": {
       "versions": [
@@ -7495,6 +7495,23 @@
               "sha": "16209bdec45788c18db2f96bece0319500266e4a",
               "date": "2026-07-14T17:11:03+01:00",
               "subject": "Port B.4 Training Dynamics worksheet into tex/training-dynamics/",
+              "author": "David Quarel"
+            }
+          ]
+        }
+      ]
+    },
+    "world-models": {
+      "versions": [
+        {
+          "tree": "d7deed5e189ebd15d4e30356ae622df73bcea16b",
+          "status": "ok",
+          "pipeline": "dbd8f8b3ad0e8277273d1f33f303f225a8cf62b0",
+          "commits": [
+            {
+              "sha": "33583af753e5e3cdb5e2418d5542df2d292a2a25",
+              "date": "2026-09-24T15:49:41-04:00",
+              "subject": "[D.7] World Models: reading page from the Doc tab, Mess3 notebook",
               "author": "David Quarel"
             }
           ]
