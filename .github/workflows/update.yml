@@ -2,8 +2,8 @@
 # gained since the last run, and commit them here.
 #
 # Triggered by iliad-intensive's snapshots-dispatch workflow, which starts
-# this one (workflow_dispatch) on every push touching tex/ and every fork PR
-# update. That repo holds the only secret, SNAPSHOTS_DISPATCH_TOKEN, scoped to
+# this one (workflow_dispatch) on every push touching tex/ and every update to
+# a fork PR by a trusted author. That repo holds the only secret, SNAPSHOTS_DISPATCH_TOKEN, scoped to
 # Actions: write here, so it can start runs but never push. This repo then
 # checks out iliad-intensive (public, so no credential) and pushes to itself
 # with its own GITHUB_TOKEN. A daily cron is the backstop for a missed
@@ -56,13 +56,43 @@ jobs:
           fetch-depth: 0
           lfs: true
 
-      # Every PR's head, fork PRs included: a fork's branches are not in this
-      # repo, but GitHub keeps each PR's head at refs/pull/<N>/head. Under
-      # refs/remotes/ the backfill's --remotes enumeration picks them up.
-      # Not refs/pull/<N>/merge: those are synthetic merges nobody wrote.
-      - name: Fetch PR heads
+      # The head of every PR by a TRUSTED author, fork PRs included: a fork's
+      # branches are not in that repo, but GitHub keeps each PR's head at
+      # refs/pull/<N>/head. Under refs/remotes/ the backfill's --remotes
+      # enumeration picks them up. Not refs/pull/<N>/merge: those are
+      # synthetic merges nobody wrote.
+      #
+      # Trusted is iliad-intensive's own rule, applied by its .github/trust.sh
+      # from the main checkout above: org member, collaborator, or listed in its
+      # .github/trusted-contributors on main. Anyone else's PR is never rendered
+      # here, so a stranger's PR can't put pages into the /dev/diff history or
+      # spend this repo's CI. (Branches in iliad-intensive itself need no check:
+      # only people with write access can push them.) Before trust.sh exists on
+      # iliad-intensive's main, only OWNER/MEMBER/COLLABORATOR PRs are fetched.
+      - name: Fetch trusted PR heads
         working-directory: iliad-intensive
-        run: git fetch -q origin '+refs/pull/*/head:refs/remotes/pull/*'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          trusted() {  # login assoc -> true/false
+            if [ -f .github/trust.sh ]; then
+              GITHUB_REPOSITORY=iliad-team/iliad-intensive bash .github/trust.sh "$1" "$2"
+            else
+              case "$2" in OWNER|MEMBER|COLLABORATOR) echo true ;; *) echo false ;; esac
+            fi
+          }
+          refspecs=()
+          while IFS=$'\t' read -r n login assoc; do
+            if [ "$(trusted "$login" "$assoc")" = true ]; then
+              refspecs+=("+refs/pull/$n/head:refs/remotes/pull/$n")
+            else
+              echo "skip PR #$n by $login ($assoc): not a trusted author"
+            fi
+          done < <(gh api --paginate "repos/iliad-team/iliad-intensive/pulls?state=all&per_page=100" \
+                     --jq '.[] | [.number, .user.login, .author_association] | @tsv')
+          echo "fetching the heads of ${#refspecs[@]} PRs by trusted authors"
+          if [ ${#refspecs[@]} -gt 0 ]; then git fetch -q origin "${refspecs[@]}"; fi
 
       - name: Anything new?
         id: check

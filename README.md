@@ -30,9 +30,12 @@ covers every local and remote-tracking branch (`--branches --remotes`, never
 `--full-history`, so it also finds folders a side branch created and later
 deleted (`ml-foundations`, `practical-ml`). A merge commit counts only when it
 changed the folder relative to its first parent, which is when a PR lands.
-Every PR's head is fetched too, as `refs/remotes/pull/<N>`, which covers fork
-PRs, whose branches are not in the repo (not `refs/pull/<N>/merge`, GitHub's
-synthetic merge).
+The head of every PR by a **trusted** author is fetched too, as
+`refs/remotes/pull/<N>`, which covers fork PRs, whose branches are not in the
+repo (not `refs/pull/<N>/merge`, GitHub's synthetic merge). Trusted is
+iliad-intensive's rule (`.github/trust.sh` on its main): an org member, a
+collaborator, or a login listed in its `.github/trusted-contributors`. Other
+PRs are never rendered, so they can't add pages to the `/dev/diff` history.
 
 ## Running the backfill
 
@@ -97,9 +100,9 @@ slug folder and run the script again.
 
 `.github/workflows/update.yml` is started by iliad-intensive's
 `.github/workflows/snapshots-dispatch.yml` on every push that touches `tex/`
-(any branch) and every fork PR update. It also runs daily as a backstop, and
+(any branch) and every update to a fork PR by a trusted author. It also runs daily as a backstop, and
 on demand from the Actions tab, optionally with "retry failed". It checks out
-iliad-intensive with every branch and PR head and does a dry run (about 45 s
+iliad-intensive with every branch and every trusted PR head and does a dry run (about 45 s
 when there is nothing new); if there are new versions, it installs Node, the
 npm dependencies and TeX Live, renders just those versions, and commits them
 here. A new version shows up a few minutes after the push.
