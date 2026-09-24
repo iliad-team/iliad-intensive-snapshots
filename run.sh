@@ -44,7 +44,7 @@ backfill flags (after the command, passed through to backfill.mjs)
 
 status / trial / build / retry first SYNC, so a local run matches what CI
 (.github/workflows/update.yml) produces: this repo is fast-forwarded to
-origin, the source repo is fetched, and pages are built with origin/main's
+origin, the source repo is fetched (every branch and PR head), and pages are built with origin/main's
 pipeline, not whatever the source checkout happens to be on. CI renders new
 versions hourly on its own; build locally only to try something out.
 
@@ -95,7 +95,9 @@ sync() {
       echo "  git checkout -- index.json && git clean -f -- '*/*.html' to drop them." >&2
       exit 1
     fi
-    git -C "$src" fetch -q origin || { echo "✗ could not fetch $src (offline? --no-sync)" >&2; exit 1; }
+    # branches, plus every PR head (fork PRs too) under refs/remotes/pull/, as CI does
+    git -C "$src" fetch -q origin '+refs/heads/*:refs/remotes/origin/*' '+refs/pull/*/head:refs/remotes/pull/*' \
+      || { echo "✗ could not fetch $src (offline? --no-sync)" >&2; exit 1; }
   fi
   if [ -z "$ref" ]; then
     ref="$(git -C "$src" symbolic-ref -q --short refs/remotes/origin/HEAD || echo origin/main)"

@@ -44,6 +44,9 @@ else
   echo "cloning $REPO → $SRC"
   git clone "$REPO" "$SRC"
 fi
+# every PR head too, fork PRs included (their branches are not in the repo)
+echo "fetching every PR head"
+git -C "$SRC" fetch -q origin '+refs/pull/*/head:refs/remotes/pull/*'
 SRC="$(cd "$SRC" && pwd)"
 
 echo
@@ -57,7 +60,7 @@ if kpsewhich stmaryrd.sty physics.sty 2>/dev/null | grep -q physics; then
 else
   sudo apt-get install -y --no-install-recommends texlive-science
 fi
-git -C "$SRC" lfs fetch --all
+git -C "$SRC" lfs fetch --all || echo "⚠ some LFS objects could not be fetched (fork PRs?); those figures stay pointers"
 
 echo
 echo "== checks =="

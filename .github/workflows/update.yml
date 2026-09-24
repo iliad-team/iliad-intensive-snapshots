@@ -1,21 +1,24 @@
 # Keep the snapshots current: render every page version iliad-intensive has
 # gained since the last run, and commit them here.
 #
-# Pull model: this repo checks out iliad-intensive (public, so no credential)
-# and pushes to itself with its own GITHUB_TOKEN, so no secret exists anywhere.
-# The cost is lag: a new version appears within the hour, not on push.
+# Triggered by iliad-intensive's snapshots-dispatch workflow, which starts
+# this one (workflow_dispatch) on every push touching tex/ and every fork PR
+# update. That repo holds the only secret, SNAPSHOTS_DISPATCH_TOKEN, scoped to
+# Actions: write here, so it can start runs but never push. This repo then
+# checks out iliad-intensive (public, so no credential) and pushes to itself
+# with its own GITHUB_TOKEN. A daily cron is the backstop for a missed
+# dispatch, or for when the token is missing or expired.
 #
-# Most runs find nothing new and stop after a ~10 s dry run; TeX Live and the
-# npm install only happen when there is something to build.
+# Most runs find nothing new and stop after a ~10 s dry run (~45 s in all);
+# TeX Live and the npm install only happen when there is something to build.
 #
 # GitHub pauses scheduled workflows in a repo with no activity for 60 days.
-# This workflow's own commits count, but if iliad-intensive goes quiet that
-# long, re-enable it under Actions.
+# That only affects the backstop; dispatches keep working.
 name: update snapshots
 
 on:
   schedule:
-    - cron: "17 * * * *"          # hourly, off the top of the hour
+    - cron: "17 5 * * *"          # daily backstop
   workflow_dispatch:
     inputs:
       retry_failed:
@@ -24,6 +27,8 @@ on:
         default: false
 
 # One run at a time: two runs would render the same versions and race to push.
+# A burst of dispatches collapses to the running run plus one pending, which
+# picks up everything that arrived meanwhile.
 concurrency:
   group: update-snapshots
   cancel-in-progress: false
@@ -50,6 +55,14 @@ jobs:
           path: iliad-intensive
           fetch-depth: 0
           lfs: true
+
+      # Every PR's head, fork PRs included: a fork's branches are not in this
+      # repo, but GitHub keeps each PR's head at refs/pull/<N>/head. Under
+      # refs/remotes/ the backfill's --remotes enumeration picks them up.
+      # Not refs/pull/<N>/merge: those are synthetic merges nobody wrote.
+      - name: Fetch PR heads
+        working-directory: iliad-intensive
+        run: git fetch -q origin '+refs/pull/*/head:refs/remotes/pull/*'
 
       - name: Anything new?
         id: check
@@ -90,11 +103,13 @@ jobs:
           sudo apt-get install -y -q --no-install-recommends -o Acquire::Retries=3 $pkgs texlive-science
 
       # Figures of every historical version, not just the checked-out one;
-      # without them pdflatex chokes on LFS pointer files.
+      # without them pdflatex chokes on LFS pointer files. A fork PR's LFS
+      # objects may not be fetchable from here; that is only a warning, and
+      # the backfill leaves those files as pointers.
       - name: Fetch every LFS object
         if: steps.check.outputs.todo != '0'
         working-directory: iliad-intensive
-        run: git lfs fetch --all
+        run: git lfs fetch --all || echo "::warning::some LFS objects could not be fetched"
 
       # Exit 2 means some versions failed to render. They are recorded in
       # index.json with their errors, so the run still commits and succeeds.

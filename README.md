@@ -30,6 +30,9 @@ covers every local and remote-tracking branch (`--branches --remotes`, never
 `--full-history`, so it also finds folders a side branch created and later
 deleted (`ml-foundations`, `practical-ml`). A merge commit counts only when it
 changed the folder relative to its first parent, which is when a PR lands.
+Every PR's head is fetched too, as `refs/remotes/pull/<N>`, which covers fork
+PRs, whose branches are not in the repo (not `refs/pull/<N>/merge`, GitHub's
+synthetic merge).
 
 ## Running the backfill
 
@@ -63,10 +66,10 @@ cd ~/Dropbox/ILIAD/iliad-intensive-snapshots
 through to `backfill.mjs`, which you can also run directly with `node`.
 
 `status`, `trial`, `build` and `retry` **sync first**: they fast-forward this
-repo to origin, fetch the source repo, and build with the source repo's
+repo to origin, fetch the source repo (every branch and PR head), and build with the source repo's
 `origin/main` rather than whatever its checkout is on (nothing ever pulls that
 checkout). A local run then produces what CI would. CI already renders new
-versions hourly (below), so build locally only to try something out, such as
+versions on every push (below), so build locally only to try something out, such as
 a pipeline fix. `--no-sync` skips the sync, and an explicit `--ref` prints a
 warning. If the lockfiles at `origin/main` differ from the source checkout's,
 the sync says to update that checkout and rerun `npm ci`.
@@ -92,13 +95,21 @@ slug folder and run the script again.
 
 ## Keeping it current
 
-`.github/workflows/update.yml` runs hourly (and on demand from the Actions
-tab, optionally with "retry failed"). It checks out iliad-intensive with every
-branch and does a dry run; if there are new versions, it installs Node, the
+`.github/workflows/update.yml` is started by iliad-intensive's
+`.github/workflows/snapshots-dispatch.yml` on every push that touches `tex/`
+(any branch) and every fork PR update. It also runs daily as a backstop, and
+on demand from the Actions tab, optionally with "retry failed". It checks out
+iliad-intensive with every branch and PR head and does a dry run (about 45 s
+when there is nothing new); if there are new versions, it installs Node, the
 npm dependencies and TeX Live, renders just those versions, and commits them
-here. iliad-intensive is public, so reading it needs no credential, and the
-workflow pushes with this repo's own token: no secrets exist anywhere. A new
-version shows up within the hour.
+here. A new version shows up a few minutes after the push.
+
+iliad-intensive is public, so reading it needs no credential, and the workflow
+pushes with this repo's own token. The one secret is iliad-intensive's
+`SNAPSHOTS_DISPATCH_TOKEN`: a fine-grained PAT scoped to this repo only, with
+Actions: read and write and nothing else, so it can start runs here but not
+push. If it expires or goes missing, the dispatch is a no-op and the daily run
+catches up.
 
 Versions that fail are recorded in `index.json` and don't fail the run. A
 failed run uploads `.logs/` as an artifact.
