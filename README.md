@@ -81,6 +81,19 @@ Ctrl-C stops cleanly and a second aborts at once. To re-render a version that
 built fine, for example after a pipeline change, delete its `.html` or its
 slug folder and run the script again.
 
+## Keeping it current
+
+`.github/workflows/update.yml` runs hourly (and on demand from the Actions
+tab, optionally with "retry failed"). It checks out iliad-intensive with every
+branch and does a dry run; if there are new versions, it installs Node, the
+npm dependencies and TeX Live, renders just those versions, and commits them
+here. iliad-intensive is public, so reading it needs no credential, and the
+workflow pushes with this repo's own token: no secrets exist anywhere. A new
+version shows up within the hour.
+
+Versions that fail are recorded in `index.json` and don't fail the run. A
+failed run uploads `.logs/` as an artifact.
+
 ## How a version is rendered
 
 The script only reads the source repo, using `git log`, `ls-tree`, `cat-file`
