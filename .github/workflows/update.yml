@@ -83,14 +83,18 @@ jobs:
             fi
           }
           refspecs=()
-          while IFS=$'\t' read -r n login assoc; do
-            if [ "$(trusted "$login" "$assoc")" = true ]; then
+          while IFS=$'\t' read -r n login assoc head_repo; do
+            # A PR whose branch lives in iliad-intensive itself was pushed by
+            # someone with write access, so it is trusted without asking. This
+            # also covers org members, whose (private) membership this token
+            # cannot see: to it they look like mere CONTRIBUTORs.
+            if [ "$head_repo" = iliad-team/iliad-intensive ] || [ "$(trusted "$login" "$assoc")" = true ]; then
               refspecs+=("+refs/pull/$n/head:refs/remotes/pull/$n")
             else
               echo "skip PR #$n by $login ($assoc): not a trusted author"
             fi
           done < <(gh api --paginate "repos/iliad-team/iliad-intensive/pulls?state=all&per_page=100" \
-                     --jq '.[] | [.number, .user.login, .author_association] | @tsv')
+                     --jq '.[] | [.number, .user.login, .author_association, (.head.repo.full_name // "")] | @tsv')
           echo "fetching the heads of ${#refspecs[@]} PRs by trusted authors"
           if [ ${#refspecs[@]} -gt 0 ]; then git fetch -q origin "${refspecs[@]}"; fi
 
