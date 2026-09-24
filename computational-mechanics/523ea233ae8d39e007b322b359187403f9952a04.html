@@ -1,0 +1,100 @@
+<!DOCTYPE html><html lang="en" class="inter_1289ada2-module__rpEG6W__variable source_serif_4_a883fd0f-module__4BFFWq__variable h-full antialiased"><head><meta charSet="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><link rel="preload" href="/_next/static/media/68d403cf9f2c68c5-s.p.0nhx~dwif.9~q.woff2" as="font" crossorigin="" type="font/woff2"/><link rel="preload" href="/_next/static/media/83afe278b6a6bb3c-s.p.0q-301v4kxxnr.woff2" as="font" crossorigin="" type="font/woff2"/><link rel="stylesheet" href="/_next/static/chunks/0r57kyok16b9q.css" data-precedence="next"/><link rel="stylesheet" href="/_next/static/chunks/0tmg9vcbw.fm2.css" data-precedence="next"/><meta name="next-size-adjust" content=""/><title>Computational Mechanics — Iliad</title><meta name="description" content="April 2026 cohort — AI Safety theory of deep learning, agency, alignment."/><meta name="robots" content="noindex, nofollow"/><link rel="icon" href="/icon.svg?icon.0q13u611vbd_z.svg" sizes="any" type="image/svg+xml"/></head><body class="min-h-full flex flex-col font-serif"><div hidden=""><!--$--><!--/$--></div><script>try{if(localStorage.getItem("iliad.navOpen")==="1")document.documentElement.classList.add("nav-open")}catch(e){}</script><header class="sticky top-0 z-30 w-full border-b border-zinc-200 bg-[var(--background)]/90 backdrop-blur supports-[backdrop-filter]:bg-[var(--background)]/80"><div class="mx-auto flex h-[var(--header-h)] max-w-6xl items-center gap-3 px-4 sm:px-6 font-sans text-sm"><button type="button" id="nav-toggle" aria-label="Toggle modules menu" aria-expanded="false" class="shrink-0 rounded p-1.5 text-zinc-700 hover:bg-zinc-100"><svg class="icon-open" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><line x1="4" y1="7" x2="20" y2="7"></line><line x1="4" y1="12" x2="20" y2="12"></line><line x1="4" y1="17" x2="20" y2="17"></line></svg><svg class="icon-close" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><line x1="6" y1="6" x2="18" y2="18"></line><line x1="18" y1="6" x2="6" y2="18"></line></svg></button><a class="flex shrink-0 items-center gap-2 text-zinc-700 hover:text-black" href="/"><svg width="18" height="18" viewBox="408 317 373 365" fill="none" xmlns="http://www.w3.org/2000/svg" class="text-black" aria-hidden="true"><path d="M434.7 681C439.2 673.8 445.1 667.5 449.9 660.4C467.7 634 481.3 605.4 490.3 574.8C509.9 508.7 501.2 434.4 464.8 375.7C450.5 352.8 432.4 332.7 409 318.9C430.1 314.7 480.8 324.1 503.9 327.6C580.2 339.3 654.8 359.3 729.3 379C743.5 394.2 754.7 412.6 763 431.5C793 499 782.6 570.7 736 627.8C733.2 623.3 731 618.1 727 614.5C710.6 600.1 669.4 599.8 648.8 601.3C597.2 605.1 547.5 624.3 501.3 646.8C489.8 652.3 441.2 679.5 434.7 681Z" fill="currentColor"></path></svg><span class="hidden font-medium sm:inline">Iliad Intensive Curriculum</span><span class="font-medium sm:hidden">Iliad</span></a></div></header><div id="page-shell" class="mx-auto w-full px-6 py-10"><nav id="module-sidebar" aria-label="Modules" class="w-full max-w-xs shrink-0 self-start lg:sticky lg:top-[calc(var(--top-h)+1rem)] lg:max-h-[calc(100vh-var(--top-h)-2rem)] lg:overflow-y-auto pr-4"><div class="space-y-5 font-sans text-sm"></div></nav><main class="min-w-0 flex-1 lg:max-w-[720px]"><article><header class="not-prose mb-6 border-b border-zinc-200 pb-4"><h1 class="font-serif text-[2.1rem] leading-[1.15] tracking-tight" style="font-weight:600">Computational Mechanics</h1><p class="mt-5 font-serif text-[1.08rem] italic leading-relaxed text-zinc-700">TODO</p><p class="mt-3 font-sans text-sm text-zinc-600"><span class="text-zinc-500">By </span>Xavier Poncini (Simplex), Adam Shai (Simplex), Paul Riechers (Simplex)</p></header><div class="prose"><section class="my-6 rounded border border-zinc-200 bg-white/60 p-4" data-component="learning-outcomes"><header class="font-sans text-xs uppercase tracking-[0.15em] text-zinc-500">What you’ll learn</header><div class="mt-2 font-serif text-[1rem] leading-relaxed text-zinc-800"><ul>
+<li>Construct their own hidden Markov models.</li>
+<li>Explain the motivation for introducing generalised hidden Markov models (GHMMs).</li>
+<li>Explain why the belief state is a useful object for making predictions about GHMM data.</li>
+<li>Compute the belief state of a GHMM.</li>
+<li>Explain the difference between the belief state of a HMM and the belief state of a GHMM (that is itself not an HMM).</li>
+<li>Explain the relationship between belief states and next-token observation probabilities for GHMMs.</li>
+<li>Compute the mixed state presentation (MSP) for GHMMs.</li>
+<li>Explain why generating data is easier than predicting data.</li>
+<li>Explain the evidence for the claim: transformers represent belief state geometry in their residual stream.</li>
+<li>Develop hypotheses for where transformers represent: belief states, observation probabilities, log observation probabilities.</li>
+</ul></div></section>
+<h2 id="prerequisites">Prerequisites</h2>
+<p><strong>Module C.2 (Mechanistic Interpretability).</strong> Familiarity with the goals and basic methodology of mechanistic interpretability, including the notions of features and circuits; the linear representation hypothesis; linear probes as a method for reading off internal representations; and a basic understanding of the transformer architecture. Students should be comfortable with the idea that one can train a linear map from model activations to some target structure and evaluate its quality (e.g. via MSE or R²).</p>
+<p><strong>Mathematical background.</strong> The module is mathematically self-contained – all formal definitions (HMMs, GHMMs, belief states, MSPs) are introduced from scratch. However, students will engage with the material more fluently if they are comfortable with the following:</p>
+<ul>
+<li><strong>Linear algebra:</strong> row-stochastic matrices, rank and invertibility, null spaces (kernels).</li>
+<li><strong>Probability:</strong> conditional probability, Bayes&#x27; rule, probability distributions over finite sets, the probability simplex.</li>
+<li><strong>Basic machine learning:</strong> next-token prediction, loss functions (cross-entropy), the concept of model activations.</li>
+</ul>
+<h2 id="content">Content</h2>
+<h3 id="fast-track">Fast-track</h3>
+<p>Read <a href="https://arxiv.org/pdf/2405.15943">Transformers represent belief state geometry in their residual stream</a>. Focus on being able to answer the following questions:</p>
+<ul>
+<li>What is a hidden Markov model (HMM)?</li>
+<li>What is a belief state?</li>
+<li>What is the mixed state presentation (MSP)?</li>
+<li>About the map learnt from activations to belief states:<!-- -->
+<ul>
+<li>What is the source?</li>
+<li>What is the target?</li>
+<li>How is the quality of the map evaluated?</li>
+</ul>
+</li>
+</ul>
+<h3 id="main-content">Main content</h3>
+<ol>
+<li>[<a href="https://drive.google.com/file/d/1WLq5UeXhHGzsmjrSr9A24NXkJxbSUvpE/view?usp=sharing">Lecture slides</a>] <strong>Overview and scope</strong>
+<ol>
+<li>What is computational mechanics?</li>
+<li>Computational mechanics &amp; AI safety</li>
+<li>Where is the research program at?</li>
+<li>What will we cover today?</li>
+</ol>
+</li>
+<li><strong>Computational mechanics foundations</strong>
+<ol>
+<li>[<a href="https://drive.google.com/file/d/1Hjaih2AtPfMRurSqMUm7IKthmo8R8qlc/view?usp=sharing">Lecture Slides</a> &amp; <a href="https://drive.google.com/file/d/1Tzw4vSpUixbJLt_Wet9ElZM10DTIpSqa/view?usp=sharing">Exercise Sheet</a>] <strong>Hidden Markov Models (HMMs)</strong>
+<ol>
+<li>What is an HMM?</li>
+<li>Notions of minimality &amp; uniqueness</li>
+<li>What is a generalised HMM (GHMM)? (see e.g. <a href="https://arxiv.org/pdf/2507.07432">Neural networks leverage nominally quantum and post-quantum representations</a>)</li>
+</ol>
+</li>
+<li>[<a href="https://drive.google.com/file/d/1IPz8Pq939VbjmVqYcYDybdJ02yvdgMGS/view?usp=sharing">Lecture slides</a> &amp; <a href="https://drive.google.com/file/d/1tfUC7uZ8TWqNqPpjH87nsXp2vQ52m3Wt/view?usp=sharing">Exercise Sheet</a>] <strong>Prediction</strong>
+<ol>
+<li>Belief states</li>
+<li>Next-token (probability) vectors</li>
+<li>Mixed-state-presentation (MSP) (see e.g. <a href="https://csc.ucdavis.edu/~cmg/papers/msc.pdf">Mixed States of Hidden Markov Processes and Their Presentations: What and how to calculate</a>)</li>
+</ol>
+</li>
+</ol>
+</li>
+<li><strong>Applications</strong>
+<ol>
+<li>[<a href="https://drive.google.com/file/d/1eifwRe-a7ZT-7lSDJqe2YUSekwgbIFND/view?usp=sharing">Tutorial Sheet</a>] <strong>Designing processes worth studying</strong>
+<ol>
+<li>Heuristic ensuring beliefs are meaningfully richer than obs probs</li>
+<li>Non-ergodic</li>
+<li>Factors (see e.g. <a href="https://arxiv.org/pdf/2602.02385v1">Transformers learn factored representations</a>)</li>
+</ol>
+</li>
+<li>[<a href="https://drive.google.com/file/d/1c_rzbR1s9N0QkpaSWcLOKUjNEIasv22y/view?usp=sharing">Reading guide</a>] <strong>Identifying belief geometry in transformers</strong>
+<ol>
+<li>For the case of HMMs – [Read: <a href="https://arxiv.org/pdf/2405.15943">Transformers represent belief state geometry in their residual stream</a>].</li>
+<li>[extension] For the case of GHMMs – [Read: <a href="https://arxiv.org/pdf/2507.07432">Neural networks leverage nominally quantum and post-quantum representations</a>]</li>
+</ol>
+</li>
+<li>[<a href="https://drive.google.com/file/d/1TiiW-n11CAPQ1CueK5_1BvidAeldofwp/view?usp=sharing">Tutorial Sheet</a>] <strong>How do transformers do it?</strong>
+<ol>
+<li>How do transformers construct representations of belief states? Partial answer in narrow setting – [Read: <a href="https://arxiv.org/pdf/2502.01954v2">Constrained belief updates explain geometric structures in transformer representations</a>]</li>
+<li>How do they decode from belief states to log obs probs then obs probs? This is an open problem!</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+<h2 id="learn-more">Learn more</h2>
+<ul>
+<li>Beyond toy architectures – in-context learning<!-- -->
+<ul>
+<li>LLMs have an amazing ability to adapt internal representations in-context – [Read: ICLR: <a href="https://arxiv.org/pdf/2501.00070">In-Context Learning of Representations</a>]</li>
+<li>LLMs can predict HMM data in-context – [Read: <a href="https://arxiv.org/pdf/2506.07298">Pre-trained Large Language Models Learn Hidden Markov Models In-context</a>]</li>
+<li>This suggests that internal representations of LLMs predicting GHMM data in-context, may resemble belief states.</li>
+</ul>
+</li>
+<li>Processes consisting of GHMMs with richer structure [Read: <a href="https://arxiv.org/pdf/2602.02385v1">Transformers learn factored representations</a>]</li>
+<li>Review article of computational mechanics [Read: <a href="https://www.nature.com/articles/nphys2190">Between order and chaos</a>]</li>
+<li><a href="https://www.simplexaisafety.com/">Simplex</a> is a non-profit research organisation working on applying computational mechanics to AI safety.</li>
+</ul></div><footer class="not-prose mt-12 border-t border-zinc-200 pt-4 font-sans text-xs text-zinc-500">A worksheet from the<!-- --> <a href="https://iliad.ac" class="underline decoration-zinc-300 underline-offset-2 hover:text-zinc-800">ILIAD</a> <!-- -->intensive · Built <!-- -->24 September 2026 at 00:24 UTC<!-- --> · <a class="underline decoration-zinc-300 underline-offset-2 hover:text-zinc-800" href="/license/">Licence</a>.</footer></article></main></div><!--$--><!--/$--><script defer="" src="/site.js"></script></body></html>
