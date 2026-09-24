@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-09-24T01:32:39.153Z",
-  "pipelineCommit": "c1e5b24a037ce82de54e17b259e628394a11cda7",
+  "generatedAt": "2026-09-24T02:41:00.047Z",
+  "pipelineCommit": "15b255d650ad19292ad9d38ab5df7e1266cd039b",
   "pages": {
     "abstractions-and-latents": {
       "versions": [
@@ -21,6 +21,25 @@
     },
     "agent-foundations": {
       "versions": [
+        {
+          "tree": "d86d1dad2dfeeb53a5e84e145de04fbb7df053ea",
+          "status": "ok",
+          "pipeline": "15b255d650ad19292ad9d38ab5df7e1266cd039b",
+          "commits": [
+            {
+              "sha": "8c1db772929e298c0fa4e478798c8d9a0ed6fdfc",
+              "date": "2026-09-23T22:00:22-04:00",
+              "subject": "Merge pull request #169 from iliad-team/agent-foundations-house-style-claude",
+              "author": "David Quarel"
+            },
+            {
+              "sha": "8c08e454cdc8cf7f401194a225d5327b97e57b33",
+              "date": "2026-09-23T21:44:26-04:00",
+              "subject": "[D.4] agent-foundations: parts, hints and remarks as contract environments",
+              "author": "David Quarel"
+            }
+          ]
+        },
         {
           "tree": "04b7291205cb320be01f58f565de9535f8f742b2",
           "status": "ok",
@@ -498,6 +517,19 @@
     },
     "aixi": {
       "versions": [
+        {
+          "tree": "cbe7d8e222285f784d196f545949422ff9b13be8",
+          "status": "ok",
+          "pipeline": "15b255d650ad19292ad9d38ab5df7e1266cd039b",
+          "commits": [
+            {
+              "sha": "de115c962e1f9d3789cc0d9a02f08a9b3f2dc3df",
+              "date": "2026-09-23T17:52:46-04:00",
+              "subject": "various fixes to bring material into iliad house style",
+              "author": "David Quarel"
+            }
+          ]
+        },
         {
           "tree": "29fc6688e1f6bf4e3e1f99677572976f6a6eef61",
           "status": "ok",
@@ -1752,13 +1784,13 @@
           "commits": [
             {
               "sha": "027b55902ad045e016b3acc8d5bde2f028e8a42f",
-              "date": "2026-07-31T00:14:44+00:00",
+              "date": "2026-07-31T00:14:44Z",
               "subject": "C.3: port Computational Mechanics worksheet (MDX)",
               "author": "Claude"
             },
             {
               "sha": "5b8750aa94bed596668eca7288a18978f5e68245",
-              "date": "2026-07-31T00:14:44+00:00",
+              "date": "2026-07-31T00:14:44Z",
               "subject": "C.3: port Computational Mechanics worksheet (MDX)",
               "author": "Claude"
             }
@@ -3535,7 +3567,7 @@
           "commits": [
             {
               "sha": "71b3ab0cbafe21f15b232f1233a4f142aa81c127",
-              "date": "2026-07-31T15:00:55+00:00",
+              "date": "2026-07-31T15:00:55Z",
               "subject": "C.1: wire in Lecture 1a slide deck source (figures pending LFS)",
               "author": "Claude"
             }
@@ -3548,7 +3580,7 @@
           "commits": [
             {
               "sha": "c24db309516840301e568cdb798160c9d05a3e40",
-              "date": "2026-07-30T18:20:52+00:00",
+              "date": "2026-07-30T18:20:52Z",
               "subject": "C.1: port Intro to ML Engineering worksheet (MDX)",
               "author": "Claude"
             }
@@ -3620,7 +3652,7 @@
           "commits": [
             {
               "sha": "4a25539ba33ce323b43cf1997a04a0ea76ea0f44",
-              "date": "2026-09-08T13:01:35+00:00",
+              "date": "2026-09-08T13:01:35Z",
               "subject": "Fix C.2 Johnson-Lindenstrauss inequality",
               "author": "museiliad-bot"
             }
@@ -3815,7 +3847,7 @@
           "commits": [
             {
               "sha": "b38a1eb4597863edada102f950d15ee53748d489",
-              "date": "2026-07-31T00:09:32+00:00",
+              "date": "2026-07-31T00:09:32Z",
               "subject": "C.2: port Mechanistic Interpretability worksheet (MDX)",
               "author": "Claude"
             }
@@ -4347,6 +4379,19 @@
     "power-seeking": {
       "versions": [
         {
+          "tree": "8dfbcfda5b1744647325e855081b82c083fc3383",
+          "status": "ok",
+          "pipeline": "15b255d650ad19292ad9d38ab5df7e1266cd039b",
+          "commits": [
+            {
+              "sha": "de115c962e1f9d3789cc0d9a02f08a9b3f2dc3df",
+              "date": "2026-09-23T17:52:46-04:00",
+              "subject": "various fixes to bring material into iliad house style",
+              "author": "David Quarel"
+            }
+          ]
+        },
+        {
           "tree": "39dc02de7ba9623a911d9294d9cbbcc6f1d93e36",
           "status": "ok",
           "pipeline": "c1e5b24a037ce82de54e17b259e628394a11cda7",
@@ -4660,6 +4705,12 @@
               "date": "2026-08-24T14:46:49+01:00",
               "subject": "p2r slides: ordinal utility is invariant under *strictly increasing* maps",
               "author": "David Quarel"
+            },
+            {
+              "sha": "214085310643ed2dd9d10a3f04d9be2b51e734a5",
+              "date": "2026-08-24T14:46:49+01:00",
+              "subject": "p2r slides: ordinal utility is invariant under *strictly increasing* maps",
+              "author": "David Quarel"
             }
           ]
         },
@@ -4886,7 +4937,7 @@
             },
             {
               "sha": "48ab34325bc2d15f22f151de2a73c6189ea304cf",
-              "date": "2026-09-21T18:22:38+00:00",
+              "date": "2026-09-21T18:22:38Z",
               "subject": "Update Chapter 2 in The Logic of Provability link in main.mdx",
               "author": "Suavesito"
             }
@@ -4979,6 +5030,32 @@
     },
     "qft": {
       "versions": [
+        {
+          "tree": "c2b9608a1f5e1f0a880cfa934bc26abc7506e023",
+          "status": "ok",
+          "pipeline": "15b255d650ad19292ad9d38ab5df7e1266cd039b",
+          "commits": [
+            {
+              "sha": "e2d02a396bda7427e6bc21e4f616ab386930f072",
+              "date": "2026-09-23T22:34:29-04:00",
+              "subject": "qft: break the 21 display equations that overflowed the web column",
+              "author": "David Quarel"
+            }
+          ]
+        },
+        {
+          "tree": "99e8fc4f32df469913296d5cfdc95219c62b385a",
+          "status": "ok",
+          "pipeline": "15b255d650ad19292ad9d38ab5df7e1266cd039b",
+          "commits": [
+            {
+              "sha": "de115c962e1f9d3789cc0d9a02f08a9b3f2dc3df",
+              "date": "2026-09-23T17:52:46-04:00",
+              "subject": "various fixes to bring material into iliad house style",
+              "author": "David Quarel"
+            }
+          ]
+        },
         {
           "tree": "7dcacc011fced9e961a6bf6120a912ec93c7d025",
           "status": "ok",
@@ -5197,6 +5274,19 @@
     },
     "reinforcement-learning": {
       "versions": [
+        {
+          "tree": "e16e53fc9dd73028ebadf7c00816b91d30023516",
+          "status": "ok",
+          "pipeline": "15b255d650ad19292ad9d38ab5df7e1266cd039b",
+          "commits": [
+            {
+              "sha": "de115c962e1f9d3789cc0d9a02f08a9b3f2dc3df",
+              "date": "2026-09-23T17:52:46-04:00",
+              "subject": "various fixes to bring material into iliad house style",
+              "author": "David Quarel"
+            }
+          ]
+        },
         {
           "tree": "9e2c697bae8b37ea3615064514dc21a4d5da2ca8",
           "status": "ok",
@@ -5456,7 +5546,7 @@
             },
             {
               "sha": "71f855c17d040aadb8559a00019c9396fc76c661",
-              "date": "2026-09-13T18:30:17+00:00",
+              "date": "2026-09-13T18:30:17Z",
               "subject": "Clarify A.4 roadmap provenance",
               "author": "museiliad-bot"
             }
@@ -5576,6 +5666,12 @@
               "date": "2026-09-16T21:19:30+01:00",
               "subject": "\\max(z,0) rather than \\max\\{0,z\\} for relu",
               "author": "David Quarel"
+            },
+            {
+              "sha": "d5b0d4af902b6fc81da0d79e225b7d0048981a95",
+              "date": "2026-09-16T18:04:49+01:00",
+              "subject": "Revert \"SLT: the phase-transition sentence names the wrong quantity\"",
+              "author": "David Quarel"
             }
           ]
         },
@@ -5648,6 +5744,25 @@
           ]
         },
         {
+          "tree": "e915fe9fcb30e37d6d896913a152bbffbd4bde66",
+          "status": "ok",
+          "pipeline": "15b255d650ad19292ad9d38ab5df7e1266cd039b",
+          "commits": [
+            {
+              "sha": "5fa51b380ec8c32491251512b0ab84d9459d0fa4",
+              "date": "2026-09-16T18:04:49+01:00",
+              "subject": "Revert \"SLT: it is |Delta L|, not Delta L, that pushes n* down\"",
+              "author": "David Quarel"
+            },
+            {
+              "sha": "9a18ec5788f28fe3202d3940546f351b4908d223",
+              "date": "2026-08-24T14:46:59+01:00",
+              "subject": "SLT: the phase-transition sentence names the wrong quantity",
+              "author": "David Quarel"
+            }
+          ]
+        },
+        {
           "tree": "afa9728295dbc84a2ea88b97a1968a397fa6eb40",
           "status": "ok",
           "pipeline": "c1e5b24a037ce82de54e17b259e628394a11cda7",
@@ -5710,6 +5825,19 @@
           "commits": [
             {
               "sha": "1ef4a5827c8a3611e8127bd5537f860392b32738",
+              "date": "2026-08-24T14:46:59+01:00",
+              "subject": "SLT: it is |Delta L|, not Delta L, that pushes n* down",
+              "author": "David Quarel"
+            }
+          ]
+        },
+        {
+          "tree": "f44e5c8630eb710fbc2bd384899ffa6992f4eca6",
+          "status": "ok",
+          "pipeline": "15b255d650ad19292ad9d38ab5df7e1266cd039b",
+          "commits": [
+            {
+              "sha": "8efe58d2163a52f4f4815c47969fbd8549a5684e",
               "date": "2026-08-24T14:46:59+01:00",
               "subject": "SLT: it is |Delta L|, not Delta L, that pushes n* down",
               "author": "David Quarel"
@@ -6603,6 +6731,19 @@
     "steganography": {
       "versions": [
         {
+          "tree": "c3c810b7c7b94a23d0d007fef1e0d03ce617631b",
+          "status": "ok",
+          "pipeline": "15b255d650ad19292ad9d38ab5df7e1266cd039b",
+          "commits": [
+            {
+              "sha": "de115c962e1f9d3789cc0d9a02f08a9b3f2dc3df",
+              "date": "2026-09-23T17:52:46-04:00",
+              "subject": "various fixes to bring material into iliad house style",
+              "author": "David Quarel"
+            }
+          ]
+        },
+        {
           "tree": "31378751edf460775d954fc43a8b3c59b813b904",
           "status": "ok",
           "pipeline": "c1e5b24a037ce82de54e17b259e628394a11cda7",
@@ -6757,6 +6898,19 @@
     "training-dynamics": {
       "versions": [
         {
+          "tree": "85dbc6420c48207d1ca3a9791c2369ebc55672bd",
+          "status": "ok",
+          "pipeline": "15b255d650ad19292ad9d38ab5df7e1266cd039b",
+          "commits": [
+            {
+              "sha": "b49d15460a4455fe0458a24fc551287c02965de4",
+              "date": "2026-09-23T22:12:42-04:00",
+              "subject": "training-dynamics: \"et al\" -> \"et al.\" in the Helias lecture-notes entry",
+              "author": "David Quarel"
+            }
+          ]
+        },
+        {
           "tree": "19861396ca7213d0ac7bf19ee421aad5b937d833",
           "status": "ok",
           "pipeline": "c1e5b24a037ce82de54e17b259e628394a11cda7",
@@ -6814,6 +6968,12 @@
               "sha": "fc32c29dca516794356908c92a595fd3b41fb2ca",
               "date": "2026-09-22T10:23:42-04:00",
               "subject": "Merge remote-tracking branch 'origin/main' into auto-errata-pending",
+              "author": "David Quarel"
+            },
+            {
+              "sha": "2cdd8c4e8ebcf25a4e623182332d25cf9d490fb2",
+              "date": "2026-08-24T14:47:08+01:00",
+              "subject": "training-dynamics: Arora et al. analyse gradient descent, not SGD",
               "author": "David Quarel"
             }
           ]
@@ -6913,6 +7073,19 @@
           "commits": [
             {
               "sha": "e50a053c1e26fe39ee906f799eae88e3cb0c0fa2",
+              "date": "2026-08-24T14:47:08+01:00",
+              "subject": "training-dynamics: \"et al\" -> \"et al.\" in two reading-list entries",
+              "author": "David Quarel"
+            }
+          ]
+        },
+        {
+          "tree": "c070b015143c5fd494e46b29cc7f04cb697b59ea",
+          "status": "ok",
+          "pipeline": "15b255d650ad19292ad9d38ab5df7e1266cd039b",
+          "commits": [
+            {
+              "sha": "40776a46aa3211236c3c1e75c408af07bc89168d",
               "date": "2026-08-24T14:47:08+01:00",
               "subject": "training-dynamics: \"et al\" -> \"et al.\" in two reading-list entries",
               "author": "David Quarel"
@@ -7195,6 +7368,20 @@
     },
     "worst-case-interp": {
       "versions": [
+        {
+          "tree": "ac86e11ca496bc7376b80747e8c7ffe9a0801876",
+          "status": "failed",
+          "error": "next build failed:\nError occurred prerendering page \"/page/worst-case-interp\". Read more: https://nextjs.org/docs/messages/prerender-error\nError: Expected component `NotebookNoSol` to be defined: you likely forgot to import, pass, or provide it.\n    at ignore-listed frames {\n  digest: '3114312112'\n}",
+          "pipeline": "15b255d650ad19292ad9d38ab5df7e1266cd039b",
+          "commits": [
+            {
+              "sha": "2ebbf6f632e2ef7a6f669ffafbbc492edaceb261",
+              "date": "2026-09-23T21:36:10-04:00",
+              "subject": "[E.3] Move the compact-proofs notebook in from iliad-intensive-E.3",
+              "author": "David Quarel"
+            }
+          ]
+        },
         {
           "tree": "1c5e0fce4f91ea55ac18937fa980bbaafd0896a4",
           "status": "ok",
