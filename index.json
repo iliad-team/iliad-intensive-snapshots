@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-30T22:07:06.148Z",
+  "generatedAt": "2026-09-30T22:30:57.385Z",
   "pipelineCommit": "11ebdd5c5024b8312e880290d8c2e80b973c35f1",
   "pages": {
     "abstractions-and-latents": {
@@ -517,6 +517,19 @@
     },
     "aixi": {
       "versions": [
+        {
+          "tree": "184be1127afae66d16465983d52d798391e7995c",
+          "status": "ok",
+          "pipeline": "11ebdd5c5024b8312e880290d8c2e80b973c35f1",
+          "commits": [
+            {
+              "sha": "df20d6c8df75f218c6e435316400c8c3901b03fd",
+              "date": "2026-09-30T17:27:33-05:00",
+              "subject": "Author affiliations: David Quarel → ARENA, Leon Lang → Iliad",
+              "author": "David Quarel"
+            }
+          ]
+        },
         {
           "tree": "6c18876ab73fa10a65e88d2726845f7acbdf49da",
           "status": "ok",
@@ -4612,6 +4625,19 @@
     "policy-gradients-misgeneralization": {
       "versions": [
         {
+          "tree": "c4bf8093c831566ba447477a44b3e7deb967a497",
+          "status": "ok",
+          "pipeline": "11ebdd5c5024b8312e880290d8c2e80b973c35f1",
+          "commits": [
+            {
+              "sha": "df20d6c8df75f218c6e435316400c8c3901b03fd",
+              "date": "2026-09-30T17:27:33-05:00",
+              "subject": "Author affiliations: David Quarel → ARENA, Leon Lang → Iliad",
+              "author": "David Quarel"
+            }
+          ]
+        },
+        {
           "tree": "4269fbf2b5e72749e20517a8602e28337069ff16",
           "status": "ok",
           "pipeline": "11ebdd5c5024b8312e880290d8c2e80b973c35f1",
@@ -4799,6 +4825,19 @@
     },
     "power-seeking": {
       "versions": [
+        {
+          "tree": "b1abaa7add050ff2c6a842e8369f9f3efde938f0",
+          "status": "ok",
+          "pipeline": "11ebdd5c5024b8312e880290d8c2e80b973c35f1",
+          "commits": [
+            {
+              "sha": "df20d6c8df75f218c6e435316400c8c3901b03fd",
+              "date": "2026-09-30T17:27:33-05:00",
+              "subject": "Author affiliations: David Quarel → ARENA, Leon Lang → Iliad",
+              "author": "David Quarel"
+            }
+          ]
+        },
         {
           "tree": "8dfbcfda5b1744647325e855081b82c083fc3383",
           "status": "ok",
@@ -5752,6 +5791,19 @@
     },
     "reinforcement-learning": {
       "versions": [
+        {
+          "tree": "a92e4273dd7eac9d7e74495c9528481869a57260",
+          "status": "ok",
+          "pipeline": "11ebdd5c5024b8312e880290d8c2e80b973c35f1",
+          "commits": [
+            {
+              "sha": "df20d6c8df75f218c6e435316400c8c3901b03fd",
+              "date": "2026-09-30T17:27:33-05:00",
+              "subject": "Author affiliations: David Quarel → ARENA, Leon Lang → Iliad",
+              "author": "David Quarel"
+            }
+          ]
+        },
         {
           "tree": "e16e53fc9dd73028ebadf7c00816b91d30023516",
           "status": "ok",
@@ -6746,6 +6798,19 @@
     },
     "solomonoff-induction": {
       "versions": [
+        {
+          "tree": "3c4f28517002d51a7fe652026a3c7f495283ec29",
+          "status": "ok",
+          "pipeline": "11ebdd5c5024b8312e880290d8c2e80b973c35f1",
+          "commits": [
+            {
+              "sha": "df20d6c8df75f218c6e435316400c8c3901b03fd",
+              "date": "2026-09-30T17:27:33-05:00",
+              "subject": "Author affiliations: David Quarel → ARENA, Leon Lang → Iliad",
+              "author": "David Quarel"
+            }
+          ]
+        },
         {
           "tree": "38e7d0b87648d8251a5ad5aef7c6904b5ec066b7",
           "status": "ok",
