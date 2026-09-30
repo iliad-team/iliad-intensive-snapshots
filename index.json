@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-30T20:55:41.501Z",
+  "generatedAt": "2026-09-30T21:02:13.078Z",
   "pipelineCommit": "043f764a16eaa7f4f6dc8b789c02de721452eefe",
   "pages": {
     "abstractions-and-latents": {
@@ -1819,6 +1819,19 @@
     },
     "condensation": {
       "versions": [
+        {
+          "tree": "848543bd745a2351eb437b316dcfd249f68c67ad",
+          "status": "ok",
+          "pipeline": "043f764a16eaa7f4f6dc8b789c02de721452eefe",
+          "commits": [
+            {
+              "sha": "b0293cc3fcb987875e33135f5b0ffb2874d53f62",
+              "date": "2026-09-30T16:59:00-04:00",
+              "subject": "C.4: merge four runs of short sentences",
+              "author": "Satya Benson"
+            }
+          ]
+        },
         {
           "tree": "060070538bc3c84036504f451fe8a2e6e8465cad",
           "status": "ok",
