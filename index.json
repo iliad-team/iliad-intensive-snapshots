@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-30T16:46:52.067Z",
+  "generatedAt": "2026-09-30T16:59:00.033Z",
   "pipelineCommit": "043f764a16eaa7f4f6dc8b789c02de721452eefe",
   "pages": {
     "abstractions-and-latents": {
@@ -1819,6 +1819,19 @@
     },
     "condensation": {
       "versions": [
+        {
+          "tree": "334c7da1f34bf78c5e0c1001261531b7f23c51f5",
+          "status": "ok",
+          "pipeline": "043f764a16eaa7f4f6dc8b789c02de721452eefe",
+          "commits": [
+            {
+              "sha": "642651e45bc084092d6e8417c8faf8c115d97dcd",
+              "date": "2026-09-30T12:55:45-04:00",
+              "subject": "C.4: connect to natural latents, the NAH and ELK",
+              "author": "Satya Benson"
+            }
+          ]
+        },
         {
           "tree": "2486c2d3d5ed55f023d198e374a1666389cc0be5",
           "status": "ok",
