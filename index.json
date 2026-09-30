@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-09-30T22:30:57.385Z",
-  "pipelineCommit": "11ebdd5c5024b8312e880290d8c2e80b973c35f1",
+  "generatedAt": "2026-09-30T22:43:07.523Z",
+  "pipelineCommit": "3c0a8fd26b31d0d2d722aa4925cae685b6fe8c71",
   "pages": {
     "abstractions-and-latents": {
       "versions": [
@@ -522,6 +522,12 @@
           "status": "ok",
           "pipeline": "11ebdd5c5024b8312e880290d8c2e80b973c35f1",
           "commits": [
+            {
+              "sha": "3c0a8fd26b31d0d2d722aa4925cae685b6fe8c71",
+              "date": "2026-09-30T17:40:38-05:00",
+              "subject": "Merge pull request #185 from iliad-team/affiliation-arena-claude",
+              "author": "David Quarel"
+            },
             {
               "sha": "df20d6c8df75f218c6e435316400c8c3901b03fd",
               "date": "2026-09-30T17:27:33-05:00",
@@ -4625,6 +4631,25 @@
     "policy-gradients-misgeneralization": {
       "versions": [
         {
+          "tree": "89b2de7a21f244ae1ee2ded78832788c6e79cd8e",
+          "status": "ok",
+          "pipeline": "3c0a8fd26b31d0d2d722aa4925cae685b6fe8c71",
+          "commits": [
+            {
+              "sha": "3c0a8fd26b31d0d2d722aa4925cae685b6fe8c71",
+              "date": "2026-09-30T17:40:38-05:00",
+              "subject": "Merge pull request #185 from iliad-team/affiliation-arena-claude",
+              "author": "David Quarel"
+            },
+            {
+              "sha": "d35342f6aab60c7cc59c670eee0f70e9f53225eb",
+              "date": "2026-09-30T17:40:20-05:00",
+              "subject": "Update contributor attribution in main.mdx",
+              "author": "David Quarel"
+            }
+          ]
+        },
+        {
           "tree": "c4bf8093c831566ba447477a44b3e7deb967a497",
           "status": "ok",
           "pipeline": "11ebdd5c5024b8312e880290d8c2e80b973c35f1",
@@ -4830,6 +4855,12 @@
           "status": "ok",
           "pipeline": "11ebdd5c5024b8312e880290d8c2e80b973c35f1",
           "commits": [
+            {
+              "sha": "3c0a8fd26b31d0d2d722aa4925cae685b6fe8c71",
+              "date": "2026-09-30T17:40:38-05:00",
+              "subject": "Merge pull request #185 from iliad-team/affiliation-arena-claude",
+              "author": "David Quarel"
+            },
             {
               "sha": "df20d6c8df75f218c6e435316400c8c3901b03fd",
               "date": "2026-09-30T17:27:33-05:00",
@@ -5796,6 +5827,12 @@
           "status": "ok",
           "pipeline": "11ebdd5c5024b8312e880290d8c2e80b973c35f1",
           "commits": [
+            {
+              "sha": "3c0a8fd26b31d0d2d722aa4925cae685b6fe8c71",
+              "date": "2026-09-30T17:40:38-05:00",
+              "subject": "Merge pull request #185 from iliad-team/affiliation-arena-claude",
+              "author": "David Quarel"
+            },
             {
               "sha": "df20d6c8df75f218c6e435316400c8c3901b03fd",
               "date": "2026-09-30T17:27:33-05:00",
@@ -6803,6 +6840,12 @@
           "status": "ok",
           "pipeline": "11ebdd5c5024b8312e880290d8c2e80b973c35f1",
           "commits": [
+            {
+              "sha": "3c0a8fd26b31d0d2d722aa4925cae685b6fe8c71",
+              "date": "2026-09-30T17:40:38-05:00",
+              "subject": "Merge pull request #185 from iliad-team/affiliation-arena-claude",
+              "author": "David Quarel"
+            },
             {
               "sha": "df20d6c8df75f218c6e435316400c8c3901b03fd",
               "date": "2026-09-30T17:27:33-05:00",
