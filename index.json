@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-30T17:03:38.677Z",
+  "generatedAt": "2026-09-30T18:09:51.810Z",
   "pipelineCommit": "043f764a16eaa7f4f6dc8b789c02de721452eefe",
   "pages": {
     "abstractions-and-latents": {
@@ -1819,6 +1819,19 @@
     },
     "condensation": {
       "versions": [
+        {
+          "tree": "c0ee481237d4eda850640181ddaf281c7a52d2c3",
+          "status": "ok",
+          "pipeline": "043f764a16eaa7f4f6dc8b789c02de721452eefe",
+          "commits": [
+            {
+              "sha": "991e6d21c0adff3bfc5067e32992c94d73ee933f",
+              "date": "2026-09-30T14:04:02-04:00",
+              "subject": "C.4: tie the clustering models back to the conditions",
+              "author": "Satya Benson"
+            }
+          ]
+        },
         {
           "tree": "df0fcbdb9659d5877bc0f3c8158ff02dd6a6ac6e",
           "status": "ok",
