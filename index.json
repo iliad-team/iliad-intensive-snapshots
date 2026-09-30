@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-30T21:32:48.978Z",
+  "generatedAt": "2026-09-30T21:58:06.679Z",
   "pipelineCommit": "043f764a16eaa7f4f6dc8b789c02de721452eefe",
   "pages": {
     "abstractions-and-latents": {
@@ -1819,6 +1819,19 @@
     },
     "condensation": {
       "versions": [
+        {
+          "tree": "3ba7fe4b1e27f6c8587c6f03630e53ebc04fc39f",
+          "status": "ok",
+          "pipeline": "043f764a16eaa7f4f6dc8b789c02de721452eefe",
+          "commits": [
+            {
+              "sha": "da65cb912a737e994714036b4224775ffcdb0649",
+              "date": "2026-09-30T17:33:34-04:00",
+              "subject": "C.4: move the \"no single score minimizer\" remark to the score",
+              "author": "Satya Benson"
+            }
+          ]
+        },
         {
           "tree": "7aff8c5eec0000775cf9e3ca6f20a4a0168823e5",
           "status": "ok",
