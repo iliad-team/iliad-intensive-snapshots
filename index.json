@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-30T18:15:51.497Z",
+  "generatedAt": "2026-09-30T18:19:30.256Z",
   "pipelineCommit": "043f764a16eaa7f4f6dc8b789c02de721452eefe",
   "pages": {
     "abstractions-and-latents": {
@@ -1819,6 +1819,19 @@
     },
     "condensation": {
       "versions": [
+        {
+          "tree": "123698f772f7e3a5e45f8ef64592f2ff79c3ce55",
+          "status": "ok",
+          "pipeline": "043f764a16eaa7f4f6dc8b789c02de721452eefe",
+          "commits": [
+            {
+              "sha": "613189715bd0569394711e81405d6e4a95af6c98",
+              "date": "2026-09-30T14:16:12-04:00",
+              "subject": "C.4: say the common-information notions coincide, not \"closely connected\"",
+              "author": "Satya Benson"
+            }
+          ]
+        },
         {
           "tree": "cb8ed6cc50027977fd7646cd50eb3221376be2f0",
           "status": "ok",
