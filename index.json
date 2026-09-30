@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-09-30T21:58:06.679Z",
-  "pipelineCommit": "043f764a16eaa7f4f6dc8b789c02de721452eefe",
+  "generatedAt": "2026-09-30T22:07:06.148Z",
+  "pipelineCommit": "11ebdd5c5024b8312e880290d8c2e80b973c35f1",
   "pages": {
     "abstractions-and-latents": {
       "versions": [
@@ -4611,6 +4611,19 @@
     },
     "policy-gradients-misgeneralization": {
       "versions": [
+        {
+          "tree": "4269fbf2b5e72749e20517a8602e28337069ff16",
+          "status": "ok",
+          "pipeline": "11ebdd5c5024b8312e880290d8c2e80b973c35f1",
+          "commits": [
+            {
+              "sha": "11ebdd5c5024b8312e880290d8c2e80b973c35f1",
+              "date": "2026-09-30T17:04:35-05:00",
+              "subject": "Add contributor Matthew Farrugia-Roberts to goal misgen",
+              "author": "David Quarel"
+            }
+          ]
+        },
         {
           "tree": "f60764fd74697d86d654fefe0e47f37362fe07a4",
           "status": "ok",
