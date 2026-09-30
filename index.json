@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-30T16:59:00.033Z",
+  "generatedAt": "2026-09-30T17:03:38.677Z",
   "pipelineCommit": "043f764a16eaa7f4f6dc8b789c02de721452eefe",
   "pages": {
     "abstractions-and-latents": {
@@ -1819,6 +1819,19 @@
     },
     "condensation": {
       "versions": [
+        {
+          "tree": "df0fcbdb9659d5877bc0f3c8158ff02dd6a6ac6e",
+          "status": "ok",
+          "pipeline": "043f764a16eaa7f4f6dc8b789c02de721452eefe",
+          "commits": [
+            {
+              "sha": "8fd8f1054b8ec2d2ba1845bfc9c137cd31f86643",
+              "date": "2026-09-30T12:59:35-04:00",
+              "subject": "C.4: generalize the non-existence argument in an optional exercise",
+              "author": "Satya Benson"
+            }
+          ]
+        },
         {
           "tree": "334c7da1f34bf78c5e0c1001261531b7f23c51f5",
           "status": "ok",
