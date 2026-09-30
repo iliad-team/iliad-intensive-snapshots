@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-30T18:30:04.777Z",
+  "generatedAt": "2026-09-30T20:27:23.415Z",
   "pipelineCommit": "043f764a16eaa7f4f6dc8b789c02de721452eefe",
   "pages": {
     "abstractions-and-latents": {
@@ -1819,6 +1819,19 @@
     },
     "condensation": {
       "versions": [
+        {
+          "tree": "42fdf4181cf7c353bf5a9689895e1ca2f4226bce",
+          "status": "ok",
+          "pipeline": "043f764a16eaa7f4f6dc8b789c02de721452eefe",
+          "commits": [
+            {
+              "sha": "bc1c74c5bf45109f4221927b4bbeea0ebfdaf7d6",
+              "date": "2026-09-30T16:21:38-04:00",
+              "subject": "C.4: cut the jargon down and add a glossary",
+              "author": "Satya Benson"
+            }
+          ]
+        },
         {
           "tree": "8d1218f4e96eb8e687f31daa0ce3695693a87758",
           "status": "ok",
