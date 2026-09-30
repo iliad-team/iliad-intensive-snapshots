@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-30T16:28:51.673Z",
+  "generatedAt": "2026-09-30T16:46:52.067Z",
   "pipelineCommit": "043f764a16eaa7f4f6dc8b789c02de721452eefe",
   "pages": {
     "abstractions-and-latents": {
@@ -1819,6 +1819,32 @@
     },
     "condensation": {
       "versions": [
+        {
+          "tree": "2486c2d3d5ed55f023d198e374a1666389cc0be5",
+          "status": "ok",
+          "pipeline": "043f764a16eaa7f4f6dc8b789c02de721452eefe",
+          "commits": [
+            {
+              "sha": "9fe4a42d0afac076e37d4fb0b70cc095c8731d48",
+              "date": "2026-09-30T12:42:16-04:00",
+              "subject": "C.4: bring solution-only material into view",
+              "author": "Satya Benson"
+            }
+          ]
+        },
+        {
+          "tree": "67ffa859d3fc3bc4e8dd3a48e77e3d1724e1c7a0",
+          "status": "ok",
+          "pipeline": "043f764a16eaa7f4f6dc8b789c02de721452eefe",
+          "commits": [
+            {
+              "sha": "17f058049cef930d16e017659ee89312cda12c16",
+              "date": "2026-09-30T12:41:32-04:00",
+              "subject": "C.4: don't give away ex:scores in the why-these-conditions section",
+              "author": "Satya Benson"
+            }
+          ]
+        },
         {
           "tree": "820e45b15eb4c25910ea85aa58e8bc4667282c6a",
           "status": "ok",
