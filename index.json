@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-30T18:09:51.810Z",
+  "generatedAt": "2026-09-30T18:15:51.497Z",
   "pipelineCommit": "043f764a16eaa7f4f6dc8b789c02de721452eefe",
   "pages": {
     "abstractions-and-latents": {
@@ -1819,6 +1819,19 @@
     },
     "condensation": {
       "versions": [
+        {
+          "tree": "cb8ed6cc50027977fd7646cd50eb3221376be2f0",
+          "status": "ok",
+          "pipeline": "043f764a16eaa7f4f6dc8b789c02de721452eefe",
+          "commits": [
+            {
+              "sha": "8732bcb816e0d8c4befbe9697d67a1549e8d6186",
+              "date": "2026-09-30T14:12:29-04:00",
+              "subject": "C.4: make the computation point with discrete log, not a disclaimer",
+              "author": "Satya Benson"
+            }
+          ]
+        },
         {
           "tree": "c0ee481237d4eda850640181ddaf281c7a52d2c3",
           "status": "ok",
