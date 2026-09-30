@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-30T18:25:15.378Z",
+  "generatedAt": "2026-09-30T18:30:04.777Z",
   "pipelineCommit": "043f764a16eaa7f4f6dc8b789c02de721452eefe",
   "pages": {
     "abstractions-and-latents": {
@@ -1819,6 +1819,19 @@
     },
     "condensation": {
       "versions": [
+        {
+          "tree": "8d1218f4e96eb8e687f31daa0ce3695693a87758",
+          "status": "ok",
+          "pipeline": "043f764a16eaa7f4f6dc8b789c02de721452eefe",
+          "commits": [
+            {
+              "sha": "aad4cdbe84321c9b30ca28f22a8c27418663f7ad",
+              "date": "2026-09-30T14:26:53-04:00",
+              "subject": "C.4: fix the last two letter clashes",
+              "author": "Satya Benson"
+            }
+          ]
+        },
         {
           "tree": "a0c4c61ed6fe8337367bc8123cb791a98fa61a17",
           "status": "ok",
