@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-30T21:02:13.078Z",
+  "generatedAt": "2026-09-30T21:08:03.012Z",
   "pipelineCommit": "043f764a16eaa7f4f6dc8b789c02de721452eefe",
   "pages": {
     "abstractions-and-latents": {
@@ -1819,6 +1819,32 @@
     },
     "condensation": {
       "versions": [
+        {
+          "tree": "b1d9e2031639252ce3bd6cb597d0b1c19952cb2b",
+          "status": "ok",
+          "pipeline": "043f764a16eaa7f4f6dc8b789c02de721452eefe",
+          "commits": [
+            {
+              "sha": "cf80ba4cc5449a4fc672bc0c1a277d8596c5665b",
+              "date": "2026-09-30T17:02:44-04:00",
+              "subject": "C.4: tidy the prerequisites and learning outcomes",
+              "author": "Satya Benson"
+            }
+          ]
+        },
+        {
+          "tree": "9980fadf8b0bf3775568ddc382c81231f53da0f7",
+          "status": "ok",
+          "pipeline": "043f764a16eaa7f4f6dc8b789c02de721452eefe",
+          "commits": [
+            {
+              "sha": "45b7670904dbd4e795f2b6b4aa97f0d1750846f5",
+              "date": "2026-09-30T17:00:58-04:00",
+              "subject": "C.4: seven small rewrites",
+              "author": "Satya Benson"
+            }
+          ]
+        },
         {
           "tree": "848543bd745a2351eb437b316dcfd249f68c67ad",
           "status": "ok",
