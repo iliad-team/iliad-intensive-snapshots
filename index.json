@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-09-24T20:10:32.215Z",
-  "pipelineCommit": "6edb60fa1845d74ec686c278462a4609848d0306",
+  "generatedAt": "2026-09-30T16:28:51.673Z",
+  "pipelineCommit": "043f764a16eaa7f4f6dc8b789c02de721452eefe",
   "pages": {
     "abstractions-and-latents": {
       "versions": [
@@ -522,6 +522,12 @@
           "status": "ok",
           "pipeline": "6edb60fa1845d74ec686c278462a4609848d0306",
           "commits": [
+            {
+              "sha": "043f764a16eaa7f4f6dc8b789c02de721452eefe",
+              "date": "2026-09-24T16:32:00-04:00",
+              "subject": "Merge pull request #181 from iliad-team/equation-overflow-claude",
+              "author": "David Quarel"
+            },
             {
               "sha": "7b4416185964fc08d0725385290d49923d89f928",
               "date": "2026-09-24T16:06:57-04:00",
@@ -1813,6 +1819,58 @@
     },
     "condensation": {
       "versions": [
+        {
+          "tree": "820e45b15eb4c25910ea85aa58e8bc4667282c6a",
+          "status": "ok",
+          "pipeline": "043f764a16eaa7f4f6dc8b789c02de721452eefe",
+          "commits": [
+            {
+              "sha": "b44ffaa33aa83e5f36140db5a4d64469cf13284e",
+              "date": "2026-09-30T11:19:00-04:00",
+              "subject": "C.4: say why a single agent would want the two conditions",
+              "author": "Satya Benson"
+            }
+          ]
+        },
+        {
+          "tree": "8ff28a5d2afd3889eda60e35e9f4943a18ef6f83",
+          "status": "ok",
+          "pipeline": "043f764a16eaa7f4f6dc8b789c02de721452eefe",
+          "commits": [
+            {
+              "sha": "26c2a106427d67f5bd8ca9c5ef0e8d720fc80212",
+              "date": "2026-09-30T11:17:00-04:00",
+              "subject": "C.4: show the clustering figure where it motivates approximate conditions",
+              "author": "Satya Benson"
+            }
+          ]
+        },
+        {
+          "tree": "26d0a3429b3205c2e8f2403369362e73791d4958",
+          "status": "ok",
+          "pipeline": "043f764a16eaa7f4f6dc8b789c02de721452eefe",
+          "commits": [
+            {
+              "sha": "240eee746149ca6e6751f71c08a2f030466191dc",
+              "date": "2026-09-30T11:17:00-04:00",
+              "subject": "C.4: open the condensation section with the Lecture 1 motivation",
+              "author": "Satya Benson"
+            }
+          ]
+        },
+        {
+          "tree": "d175f7aac460c14a38204f49879d18efcc2a40e8",
+          "status": "ok",
+          "pipeline": "043f764a16eaa7f4f6dc8b789c02de721452eefe",
+          "commits": [
+            {
+              "sha": "8b1bc8d2d5bd92cb9e2647d935a2cbf319450ed1",
+              "date": "2026-09-30T11:17:00-04:00",
+              "subject": "C.4: merge the duplicated connections, limits and discussion sections",
+              "author": "Satya Benson"
+            }
+          ]
+        },
         {
           "tree": "775fccfc876487350a7c1ad57d84ab4707414d60",
           "status": "ok",
@@ -4482,6 +4540,25 @@
     "power-seeking": {
       "versions": [
         {
+          "tree": "8dfbcfda5b1744647325e855081b82c083fc3383",
+          "status": "ok",
+          "pipeline": "15b255d650ad19292ad9d38ab5df7e1266cd039b",
+          "commits": [
+            {
+              "sha": "da133e1219f0ee3760a620702f55f3faa8c310c3",
+              "date": "2026-09-24T16:22:25-04:00",
+              "subject": "Overflow check: raise slack to 13px; only AIXI actually overflowed",
+              "author": "David Quarel"
+            },
+            {
+              "sha": "de115c962e1f9d3789cc0d9a02f08a9b3f2dc3df",
+              "date": "2026-09-23T17:52:46-04:00",
+              "subject": "various fixes to bring material into iliad house style",
+              "author": "David Quarel"
+            }
+          ]
+        },
+        {
           "tree": "878091797e52d6c008b6ba19f085252f9cb03c20",
           "status": "ok",
           "pipeline": "6edb60fa1845d74ec686c278462a4609848d0306",
@@ -4490,19 +4567,6 @@
               "sha": "7b4416185964fc08d0725385290d49923d89f928",
               "date": "2026-09-24T16:06:57-04:00",
               "subject": "Break the six display equations that overflow the column",
-              "author": "David Quarel"
-            }
-          ]
-        },
-        {
-          "tree": "8dfbcfda5b1744647325e855081b82c083fc3383",
-          "status": "ok",
-          "pipeline": "15b255d650ad19292ad9d38ab5df7e1266cd039b",
-          "commits": [
-            {
-              "sha": "de115c962e1f9d3789cc0d9a02f08a9b3f2dc3df",
-              "date": "2026-09-23T17:52:46-04:00",
-              "subject": "various fixes to bring material into iliad house style",
               "author": "David Quarel"
             }
           ]
@@ -4763,23 +4827,16 @@
     "preferences-to-rewards": {
       "versions": [
         {
-          "tree": "0c9dcfbfecc538f89c3efc0a7ce6eb884179d253",
-          "status": "ok",
-          "pipeline": "6edb60fa1845d74ec686c278462a4609848d0306",
-          "commits": [
-            {
-              "sha": "7b4416185964fc08d0725385290d49923d89f928",
-              "date": "2026-09-24T16:06:57-04:00",
-              "subject": "Break the six display equations that overflow the column",
-              "author": "David Quarel"
-            }
-          ]
-        },
-        {
           "tree": "1c293e85dc9f497ad0377e38f68a84f43088ef91",
           "status": "ok",
           "pipeline": "c1e5b24a037ce82de54e17b259e628394a11cda7",
           "commits": [
+            {
+              "sha": "22296291a706cecdead07a0849e11df94a41555c",
+              "date": "2026-09-24T16:20:28-04:00",
+              "subject": "Overflow check: allow 4px of slack; undo two needless breaks",
+              "author": "David Quarel"
+            },
             {
               "sha": "57c44557e9320cb41e3db84dc95e89d25835c72a",
               "date": "2026-09-22T10:23:42-04:00",
@@ -4820,6 +4877,19 @@
               "sha": "a8e4ecc9b85a2627533ee28d637c46428e5e0529",
               "date": "2026-08-24T14:30:40+01:00",
               "subject": "LLM auto errata: David checked and approved every diff",
+              "author": "David Quarel"
+            }
+          ]
+        },
+        {
+          "tree": "0c9dcfbfecc538f89c3efc0a7ce6eb884179d253",
+          "status": "ok",
+          "pipeline": "6edb60fa1845d74ec686c278462a4609848d0306",
+          "commits": [
+            {
+              "sha": "7b4416185964fc08d0725385290d49923d89f928",
+              "date": "2026-09-24T16:06:57-04:00",
+              "subject": "Break the six display equations that overflow the column",
               "author": "David Quarel"
             }
           ]
@@ -5423,6 +5493,25 @@
     "reinforcement-learning": {
       "versions": [
         {
+          "tree": "e16e53fc9dd73028ebadf7c00816b91d30023516",
+          "status": "ok",
+          "pipeline": "15b255d650ad19292ad9d38ab5df7e1266cd039b",
+          "commits": [
+            {
+              "sha": "22296291a706cecdead07a0849e11df94a41555c",
+              "date": "2026-09-24T16:20:28-04:00",
+              "subject": "Overflow check: allow 4px of slack; undo two needless breaks",
+              "author": "David Quarel"
+            },
+            {
+              "sha": "de115c962e1f9d3789cc0d9a02f08a9b3f2dc3df",
+              "date": "2026-09-23T17:52:46-04:00",
+              "subject": "various fixes to bring material into iliad house style",
+              "author": "David Quarel"
+            }
+          ]
+        },
+        {
           "tree": "4d680b0001eacf59f7a6423f6c0f042965630c75",
           "status": "ok",
           "pipeline": "6edb60fa1845d74ec686c278462a4609848d0306",
@@ -5431,19 +5520,6 @@
               "sha": "7b4416185964fc08d0725385290d49923d89f928",
               "date": "2026-09-24T16:06:57-04:00",
               "subject": "Break the six display equations that overflow the column",
-              "author": "David Quarel"
-            }
-          ]
-        },
-        {
-          "tree": "e16e53fc9dd73028ebadf7c00816b91d30023516",
-          "status": "ok",
-          "pipeline": "15b255d650ad19292ad9d38ab5df7e1266cd039b",
-          "commits": [
-            {
-              "sha": "de115c962e1f9d3789cc0d9a02f08a9b3f2dc3df",
-              "date": "2026-09-23T17:52:46-04:00",
-              "subject": "various fixes to bring material into iliad house style",
               "author": "David Quarel"
             }
           ]
@@ -5763,36 +5839,16 @@
     "singular-learning-theory": {
       "versions": [
         {
-          "tree": "0537aa0c81952cb9efd350a6611701c706645d3d",
-          "status": "ok",
-          "pipeline": "6edb60fa1845d74ec686c278462a4609848d0306",
-          "commits": [
-            {
-              "sha": "7b4416185964fc08d0725385290d49923d89f928",
-              "date": "2026-09-24T16:06:57-04:00",
-              "subject": "Break the six display equations that overflow the column",
-              "author": "David Quarel"
-            }
-          ]
-        },
-        {
-          "tree": "7ac6011edf004461255b131e4e9431163d780e0a",
-          "status": "ok",
-          "pipeline": "c1e5b24a037ce82de54e17b259e628394a11cda7",
-          "commits": [
-            {
-              "sha": "aa092feee5c4bd6330fae8359c6326df8301a391",
-              "date": "2026-09-22T16:41:47-04:00",
-              "subject": "Demo (never merge): dummy edits to B.3 and B.6 to show the preview diff view",
-              "author": "David Quarel"
-            }
-          ]
-        },
-        {
           "tree": "a799921c2e38524fac5776845508a67144cd4921",
           "status": "ok",
           "pipeline": "c1e5b24a037ce82de54e17b259e628394a11cda7",
           "commits": [
+            {
+              "sha": "da133e1219f0ee3760a620702f55f3faa8c310c3",
+              "date": "2026-09-24T16:22:25-04:00",
+              "subject": "Overflow check: raise slack to 13px; only AIXI actually overflowed",
+              "author": "David Quarel"
+            },
             {
               "sha": "fc7a5e1a5ce26a84221cd8589314c5764743fa2d",
               "date": "2026-09-22T14:34:52-04:00",
@@ -5845,6 +5901,32 @@
               "sha": "d5b0d4af902b6fc81da0d79e225b7d0048981a95",
               "date": "2026-09-16T18:04:49+01:00",
               "subject": "Revert \"SLT: the phase-transition sentence names the wrong quantity\"",
+              "author": "David Quarel"
+            }
+          ]
+        },
+        {
+          "tree": "0537aa0c81952cb9efd350a6611701c706645d3d",
+          "status": "ok",
+          "pipeline": "6edb60fa1845d74ec686c278462a4609848d0306",
+          "commits": [
+            {
+              "sha": "7b4416185964fc08d0725385290d49923d89f928",
+              "date": "2026-09-24T16:06:57-04:00",
+              "subject": "Break the six display equations that overflow the column",
+              "author": "David Quarel"
+            }
+          ]
+        },
+        {
+          "tree": "7ac6011edf004461255b131e4e9431163d780e0a",
+          "status": "ok",
+          "pipeline": "c1e5b24a037ce82de54e17b259e628394a11cda7",
+          "commits": [
+            {
+              "sha": "aa092feee5c4bd6330fae8359c6326df8301a391",
+              "date": "2026-09-22T16:41:47-04:00",
+              "subject": "Demo (never merge): dummy edits to B.3 and B.6 to show the preview diff view",
               "author": "David Quarel"
             }
           ]
@@ -7573,6 +7655,12 @@
           "status": "ok",
           "pipeline": "dbd8f8b3ad0e8277273d1f33f303f225a8cf62b0",
           "commits": [
+            {
+              "sha": "015dfd199df1ff4db082ce1dc91f8283874773db",
+              "date": "2026-09-24T16:08:11-04:00",
+              "subject": "Merge pull request #179 from iliad-team/d.7-port",
+              "author": "David Quarel"
+            },
             {
               "sha": "33583af753e5e3cdb5e2418d5542df2d292a2a25",
               "date": "2026-09-24T15:49:41-04:00",
