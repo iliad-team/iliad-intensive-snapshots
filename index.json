@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-30T22:43:07.523Z",
+  "generatedAt": "2026-10-01T13:23:04.035Z",
   "pipelineCommit": "3c0a8fd26b31d0d2d722aa4925cae685b6fe8c71",
   "pages": {
     "abstractions-and-latents": {
@@ -1838,6 +1838,19 @@
     },
     "condensation": {
       "versions": [
+        {
+          "tree": "3cdbdb305db2c96876c1fd4ac81c060e97c72e3f",
+          "status": "ok",
+          "pipeline": "3c0a8fd26b31d0d2d722aa4925cae685b6fe8c71",
+          "commits": [
+            {
+              "sha": "f5d5babb5e4f0fe9e31007669545e36ed1581979",
+              "date": "2026-10-01T09:18:39-04:00",
+              "subject": "C.4: quiz tests existence and towers; \"almost surely\"",
+              "author": "Satya Benson"
+            }
+          ]
+        },
         {
           "tree": "3ba7fe4b1e27f6c8587c6f03630e53ebc04fc39f",
           "status": "ok",
