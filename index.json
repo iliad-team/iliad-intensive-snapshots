@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-01T13:23:04.035Z",
+  "generatedAt": "2026-10-01T14:46:46.893Z",
   "pipelineCommit": "3c0a8fd26b31d0d2d722aa4925cae685b6fe8c71",
   "pages": {
     "abstractions-and-latents": {
@@ -1838,6 +1838,19 @@
     },
     "condensation": {
       "versions": [
+        {
+          "tree": "2c64716556d7b82dae39132315a3d8a3937f7e61",
+          "status": "ok",
+          "pipeline": "3c0a8fd26b31d0d2d722aa4925cae685b6fe8c71",
+          "commits": [
+            {
+              "sha": "721c186f9a96b8cb8e1c577a389c19a4c39777c5",
+              "date": "2026-10-01T09:47:03-04:00",
+              "subject": "C.4: one further-reading list",
+              "author": "Satya Benson"
+            }
+          ]
+        },
         {
           "tree": "3cdbdb305db2c96876c1fd4ac81c060e97c72e3f",
           "status": "ok",
