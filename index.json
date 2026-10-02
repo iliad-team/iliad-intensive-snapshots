@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-01T14:46:46.893Z",
-  "pipelineCommit": "3c0a8fd26b31d0d2d722aa4925cae685b6fe8c71",
+  "generatedAt": "2026-10-02T11:10:44.510Z",
+  "pipelineCommit": "9838beea1d6e7820d00d3632408302f32a956769",
   "pages": {
     "abstractions-and-latents": {
       "versions": [
@@ -1838,6 +1838,19 @@
     },
     "condensation": {
       "versions": [
+        {
+          "tree": "a872829ac3d723e2de5be78c1fd7bfcc0d797787",
+          "status": "ok",
+          "pipeline": "9838beea1d6e7820d00d3632408302f32a956769",
+          "commits": [
+            {
+              "sha": "0884acbdac488165e18d20266e6ef475d89da1e3",
+              "date": "2026-10-01T09:48:48-04:00",
+              "subject": "C.4 slides: fix the B = I claim in the score-ranking frame",
+              "author": "Satya Benson"
+            }
+          ]
+        },
         {
           "tree": "2c64716556d7b82dae39132315a3d8a3937f7e61",
           "status": "ok",
