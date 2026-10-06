@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-06T02:42:06.240Z",
+  "generatedAt": "2026-10-06T02:45:45.149Z",
   "pipelineCommit": "9838beea1d6e7820d00d3632408302f32a956769",
   "pages": {
     "abstractions-and-latents": {
@@ -189,6 +189,19 @@
     },
     "ai-alignment-intro": {
       "versions": [
+        {
+          "tree": "5bdd43ab1738eb69a5bad25da54a26eba2051826",
+          "status": "ok",
+          "pipeline": "9838beea1d6e7820d00d3632408302f32a956769",
+          "commits": [
+            {
+              "sha": "cbdc119b16d85217f8f3538122acd4fb9bad7398",
+              "date": "2026-10-05T19:42:51-07:00",
+              "subject": "Add A.1 quiz link",
+              "author": "museiliad-bot"
+            }
+          ]
+        },
         {
           "tree": "e93a4e2cc8ececbce8adb696e80c3ecee7fe0b9f",
           "status": "ok",
