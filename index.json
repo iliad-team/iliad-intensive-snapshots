@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-02T11:10:44.510Z",
+  "generatedAt": "2026-10-06T02:15:29.768Z",
   "pipelineCommit": "9838beea1d6e7820d00d3632408302f32a956769",
   "pages": {
     "abstractions-and-latents": {
@@ -189,6 +189,32 @@
     },
     "ai-alignment-intro": {
       "versions": [
+        {
+          "tree": "404f5380557589585a404156508a7cd0c3f89529",
+          "status": "ok",
+          "pipeline": "9838beea1d6e7820d00d3632408302f32a956769",
+          "commits": [
+            {
+              "sha": "9e74fd3731dec2fe0cba93d1ae839e84ce51aef8",
+              "date": "2026-10-05T19:12:22-07:00",
+              "subject": "[A.1] Add alignment introduction slides",
+              "author": "museiliad-bot"
+            }
+          ]
+        },
+        {
+          "tree": "fe2f86da25ce5a31271d6bf701edd95003e5a10b",
+          "status": "ok",
+          "pipeline": "9838beea1d6e7820d00d3632408302f32a956769",
+          "commits": [
+            {
+              "sha": "0892bad60b4c1e64771d6d3e2090b3fefa207969",
+              "date": "2026-10-05T19:12:21-07:00",
+              "subject": "[A.1] Update alignment introduction worksheet",
+              "author": "museiliad-bot"
+            }
+          ]
+        },
         {
           "tree": "d998dd872fe6ed1cabdcd8cc3b1121b1d1b4a5e7",
           "status": "ok",
