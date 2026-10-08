@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-06T02:45:45.149Z",
-  "pipelineCommit": "9838beea1d6e7820d00d3632408302f32a956769",
+  "generatedAt": "2026-10-08T04:51:52.228Z",
+  "pipelineCommit": "e50865e6d8373ece996b00d78ed81a14f2b65272",
   "pages": {
     "abstractions-and-latents": {
       "versions": [
@@ -194,6 +194,12 @@
           "status": "ok",
           "pipeline": "9838beea1d6e7820d00d3632408302f32a956769",
           "commits": [
+            {
+              "sha": "e50865e6d8373ece996b00d78ed81a14f2b65272",
+              "date": "2026-10-06T11:58:10-07:00",
+              "subject": "Merge pull request #190 from museiliad-bot/muse/port-a1-materials",
+              "author": "David Quarel"
+            },
             {
               "sha": "cbdc119b16d85217f8f3538122acd4fb9bad7398",
               "date": "2026-10-05T19:42:51-07:00",
@@ -1217,6 +1223,19 @@
     "alignment-in-practice": {
       "versions": [
         {
+          "tree": "f26241bb58db1e24c2221821106172ee4cb03762",
+          "status": "ok",
+          "pipeline": "e50865e6d8373ece996b00d78ed81a14f2b65272",
+          "commits": [
+            {
+              "sha": "632b3fcb6aa503c1fafc6cad2525ee1446f9151d",
+              "date": "2026-10-07T21:48:47-07:00",
+              "subject": "[A.2] Update Alignment in Practice materials",
+              "author": "museiliad-bot"
+            }
+          ]
+        },
+        {
           "tree": "bed2d5dd6728e4bf5fe0c349cf520f5f8cce79a2",
           "status": "ok",
           "pipeline": "c1e5b24a037ce82de54e17b259e628394a11cda7",
@@ -1895,6 +1914,12 @@
           "status": "ok",
           "pipeline": "9838beea1d6e7820d00d3632408302f32a956769",
           "commits": [
+            {
+              "sha": "00ac9a246b61904260c9009e42e3163b59c230e9",
+              "date": "2026-10-06T08:33:47-07:00",
+              "subject": "Merge pull request #184 from iliad-team/c4-review-claude",
+              "author": "David Quarel"
+            },
             {
               "sha": "0884acbdac488165e18d20266e6ef475d89da1e3",
               "date": "2026-10-01T09:48:48-04:00",
