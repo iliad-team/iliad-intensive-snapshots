@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-08T04:51:52.228Z",
-  "pipelineCommit": "e50865e6d8373ece996b00d78ed81a14f2b65272",
+  "generatedAt": "2026-10-09T01:07:33.710Z",
+  "pipelineCommit": "46ea03c036a05c7687d702d509037521e19f3b0c",
   "pages": {
     "abstractions-and-latents": {
       "versions": [
@@ -1227,6 +1227,12 @@
           "status": "ok",
           "pipeline": "e50865e6d8373ece996b00d78ed81a14f2b65272",
           "commits": [
+            {
+              "sha": "98fbb219a9d9d50cfaf1d6473d2c6947ac592943",
+              "date": "2026-10-07T22:10:08-07:00",
+              "subject": "Merge pull request #191 from museiliad-bot/muse/update-a2-alignment",
+              "author": "David Quarel"
+            },
             {
               "sha": "632b3fcb6aa503c1fafc6cad2525ee1446f9151d",
               "date": "2026-10-07T21:48:47-07:00",
@@ -4746,6 +4752,19 @@
     },
     "policy-gradients-misgeneralization": {
       "versions": [
+        {
+          "tree": "0089aba1d066fecc9421bc88623e2b588fc2a314",
+          "status": "ok",
+          "pipeline": "46ea03c036a05c7687d702d509037521e19f3b0c",
+          "commits": [
+            {
+              "sha": "ddb45a59df9e68c53684f41c0a1690eeb695fa8d",
+              "date": "2026-10-08T18:02:41-07:00",
+              "subject": "[D.2] Potential-shaping exercises on the goal-misgen sheet",
+              "author": "David Quarel"
+            }
+          ]
+        },
         {
           "tree": "89b2de7a21f244ae1ee2ded78832788c6e79cd8e",
           "status": "ok",
