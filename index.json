@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-09T07:03:17.428Z",
+  "generatedAt": "2026-10-09T18:21:43.032Z",
   "pipelineCommit": "46ea03c036a05c7687d702d509037521e19f3b0c",
   "pages": {
     "abstractions-and-latents": {
@@ -4753,6 +4753,19 @@
     "policy-gradients-misgeneralization": {
       "versions": [
         {
+          "tree": "e34a052bbce4ecebd1cbdb7f7ea9aa587b0d47a3",
+          "status": "ok",
+          "pipeline": "46ea03c036a05c7687d702d509037521e19f3b0c",
+          "commits": [
+            {
+              "sha": "670deb276f3f40b0b4787d51ad28367bbb62c9ba",
+              "date": "2026-10-09T11:17:52-07:00",
+              "subject": "goalmisgen exercises",
+              "author": "David Quarel"
+            }
+          ]
+        },
+        {
           "tree": "3532851b2d8ea716048640629c1767ad492b4c8c",
           "status": "ok",
           "pipeline": "46ea03c036a05c7687d702d509037521e19f3b0c",
@@ -4800,6 +4813,19 @@
               "sha": "ddb45a59df9e68c53684f41c0a1690eeb695fa8d",
               "date": "2026-10-08T18:02:41-07:00",
               "subject": "[D.2] Potential-shaping exercises on the goal-misgen sheet",
+              "author": "David Quarel"
+            }
+          ]
+        },
+        {
+          "tree": "0963e31651ea5763d465d543589a211ee3c5b2b0",
+          "status": "ok",
+          "pipeline": "46ea03c036a05c7687d702d509037521e19f3b0c",
+          "commits": [
+            {
+              "sha": "1022c05ec68c5267f8320100d69e74892b84469f",
+              "date": "2026-10-08T17:00:40-07:00",
+              "subject": "simplified goalmisgen slides",
               "author": "David Quarel"
             }
           ]
