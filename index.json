@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-09T06:42:58.325Z",
+  "generatedAt": "2026-10-09T07:03:17.428Z",
   "pipelineCommit": "46ea03c036a05c7687d702d509037521e19f3b0c",
   "pages": {
     "abstractions-and-latents": {
@@ -4752,6 +4752,19 @@
     },
     "policy-gradients-misgeneralization": {
       "versions": [
+        {
+          "tree": "3532851b2d8ea716048640629c1767ad492b4c8c",
+          "status": "ok",
+          "pipeline": "46ea03c036a05c7687d702d509037521e19f3b0c",
+          "commits": [
+            {
+              "sha": "f221145d1b1fa617356dd411c6f658a70ad84e73",
+              "date": "2026-10-09T06:59:52Z",
+              "subject": "[D.2] Potential-shaping Exercise 4: use existence of optimal policies",
+              "author": "David Quarel"
+            }
+          ]
+        },
         {
           "tree": "45b548618216b69afbcbb30ae84c3031c61700f7",
           "status": "ok",
