@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-09T01:07:33.710Z",
+  "generatedAt": "2026-10-09T06:42:58.325Z",
   "pipelineCommit": "46ea03c036a05c7687d702d509037521e19f3b0c",
   "pages": {
     "abstractions-and-latents": {
@@ -4752,6 +4752,32 @@
     },
     "policy-gradients-misgeneralization": {
       "versions": [
+        {
+          "tree": "45b548618216b69afbcbb30ae84c3031c61700f7",
+          "status": "ok",
+          "pipeline": "46ea03c036a05c7687d702d509037521e19f3b0c",
+          "commits": [
+            {
+              "sha": "cadfcc3ddf93561326d15b1ab4d3b0bc636f1c2a",
+              "date": "2026-10-09T06:40:04Z",
+              "subject": "[D.2] Potential-shaping exercises: index rewards as r_{t+1}",
+              "author": "David Quarel"
+            }
+          ]
+        },
+        {
+          "tree": "38d398f4e73e0099a56e83f3a76881346d71575a",
+          "status": "ok",
+          "pipeline": "46ea03c036a05c7687d702d509037521e19f3b0c",
+          "commits": [
+            {
+              "sha": "b665efd3ea5ba98520ea175b6790133576f86948",
+              "date": "2026-10-08T18:04:16-07:00",
+              "subject": "[D.2] Potential-shaping solutions: show every derivation step",
+              "author": "David Quarel"
+            }
+          ]
+        },
         {
           "tree": "0089aba1d066fecc9421bc88623e2b588fc2a314",
           "status": "ok",
