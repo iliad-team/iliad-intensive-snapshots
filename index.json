@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-10T00:30:51.073Z",
+  "generatedAt": "2026-10-10T02:37:25.366Z",
   "pipelineCommit": "4fc100cc9ca0d794adb7eca094c0f4378861ed41",
   "pages": {
     "abstractions-and-latents": {
@@ -7041,6 +7041,19 @@
     },
     "solomonoff-induction": {
       "versions": [
+        {
+          "tree": "41605f10b3b68e5c1f0d7b1a8a26b39ad8d55483",
+          "status": "ok",
+          "pipeline": "4fc100cc9ca0d794adb7eca094c0f4378861ed41",
+          "commits": [
+            {
+              "sha": "55e249feb3c1b44e74f115a594bde5b9af723e9d",
+              "date": "2026-10-09T19:34:29-07:00",
+              "subject": "Remove errata comments from main.tex",
+              "author": "David Quarel"
+            }
+          ]
+        },
         {
           "tree": "ce8d3986245760486211fc5ea21d90ba8f0a7883",
           "status": "ok",
