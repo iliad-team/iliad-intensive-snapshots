@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-09T18:21:43.032Z",
-  "pipelineCommit": "46ea03c036a05c7687d702d509037521e19f3b0c",
+  "generatedAt": "2026-10-10T00:30:51.073Z",
+  "pipelineCommit": "4fc100cc9ca0d794adb7eca094c0f4378861ed41",
   "pages": {
     "abstractions-and-latents": {
       "versions": [
@@ -4753,6 +4753,25 @@
     "policy-gradients-misgeneralization": {
       "versions": [
         {
+          "tree": "3532851b2d8ea716048640629c1767ad492b4c8c",
+          "status": "ok",
+          "pipeline": "46ea03c036a05c7687d702d509037521e19f3b0c",
+          "commits": [
+            {
+              "sha": "4fc100cc9ca0d794adb7eca094c0f4378861ed41",
+              "date": "2026-10-09T15:13:22-07:00",
+              "subject": "Merge pull request #194 from iliad-team/potential-shaping-exercises-claude",
+              "author": "David Quarel"
+            },
+            {
+              "sha": "f221145d1b1fa617356dd411c6f658a70ad84e73",
+              "date": "2026-10-09T06:59:52Z",
+              "subject": "[D.2] Potential-shaping Exercise 4: use existence of optimal policies",
+              "author": "David Quarel"
+            }
+          ]
+        },
+        {
           "tree": "e34a052bbce4ecebd1cbdb7f7ea9aa587b0d47a3",
           "status": "ok",
           "pipeline": "46ea03c036a05c7687d702d509037521e19f3b0c",
@@ -4761,19 +4780,6 @@
               "sha": "670deb276f3f40b0b4787d51ad28367bbb62c9ba",
               "date": "2026-10-09T11:17:52-07:00",
               "subject": "goalmisgen exercises",
-              "author": "David Quarel"
-            }
-          ]
-        },
-        {
-          "tree": "3532851b2d8ea716048640629c1767ad492b4c8c",
-          "status": "ok",
-          "pipeline": "46ea03c036a05c7687d702d509037521e19f3b0c",
-          "commits": [
-            {
-              "sha": "f221145d1b1fa617356dd411c6f658a70ad84e73",
-              "date": "2026-10-09T06:59:52Z",
-              "subject": "[D.2] Potential-shaping Exercise 4: use existence of optimal policies",
               "author": "David Quarel"
             }
           ]
@@ -7035,6 +7041,19 @@
     },
     "solomonoff-induction": {
       "versions": [
+        {
+          "tree": "ce8d3986245760486211fc5ea21d90ba8f0a7883",
+          "status": "ok",
+          "pipeline": "4fc100cc9ca0d794adb7eca094c0f4378861ed41",
+          "commits": [
+            {
+              "sha": "6cf2db1258cf627fd0faed83c15f251761d93387",
+              "date": "2026-10-09T17:27:35-07:00",
+              "subject": "Fix history length in Solomonoff cumulative prediction error",
+              "author": "museiliad-bot"
+            }
+          ]
+        },
         {
           "tree": "3c4f28517002d51a7fe652026a3c7f495283ec29",
           "status": "ok",
