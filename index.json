@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-10T02:37:25.366Z",
-  "pipelineCommit": "4fc100cc9ca0d794adb7eca094c0f4378861ed41",
+  "generatedAt": "2026-10-11T16:10:57.090Z",
+  "pipelineCommit": "d5fec17706ceed1fa028ca949b97b92dcc2f5f7e",
   "pages": {
     "abstractions-and-latents": {
       "versions": [
@@ -1502,6 +1502,32 @@
     "alignment-in-practice-ii": {
       "versions": [
         {
+          "tree": "33aa5cf6338317527f7edff95dd69be1feaeb650",
+          "status": "ok",
+          "pipeline": "d5fec17706ceed1fa028ca949b97b92dcc2f5f7e",
+          "commits": [
+            {
+              "sha": "94bef562c0712b9bb34148d40b9869612085e795",
+              "date": "2026-10-11T09:07:27-07:00",
+              "subject": "Preserve unpublished worksheet notes outside downloads",
+              "author": "museiliad-bot"
+            }
+          ]
+        },
+        {
+          "tree": "af5990150336d481b855469bb690b1b45360fc5b",
+          "status": "ok",
+          "pipeline": "d5fec17706ceed1fa028ca949b97b92dcc2f5f7e",
+          "commits": [
+            {
+              "sha": "149203af4287e1e5098a8873e064215b61382241",
+              "date": "2026-10-11T09:07:25-07:00",
+              "subject": "Remove unpublished comments from worksheet downloads",
+              "author": "museiliad-bot"
+            }
+          ]
+        },
+        {
           "tree": "6d04ee1ceb083f8e7582da848e147ec3414add61",
           "status": "ok",
           "pipeline": "c1e5b24a037ce82de54e17b259e628394a11cda7",
@@ -2451,6 +2477,32 @@
     },
     "data-attribution": {
       "versions": [
+        {
+          "tree": "bae4dfac13802545d8b2222b0e3edf9fef654a6c",
+          "status": "ok",
+          "pipeline": "d5fec17706ceed1fa028ca949b97b92dcc2f5f7e",
+          "commits": [
+            {
+              "sha": "bef1e4c113a1d23c7e3d2c62ea78f2e8f3d1edc8",
+              "date": "2026-10-11T09:07:24-07:00",
+              "subject": "Use documented hint markup in Data Attribution",
+              "author": "museiliad-bot"
+            }
+          ]
+        },
+        {
+          "tree": "b4f23aa4983320e077761c90d1f9d2a5a901e515",
+          "status": "ok",
+          "pipeline": "d5fec17706ceed1fa028ca949b97b92dcc2f5f7e",
+          "commits": [
+            {
+              "sha": "f522b108cddf478b10d5aabb5e25b4544acb1659",
+              "date": "2026-10-11T09:07:23-07:00",
+              "subject": "Use documented hint markup in Data Attribution",
+              "author": "museiliad-bot"
+            }
+          ]
+        },
         {
           "tree": "9760f6c626d1043e4abbcade46c8122d5849fead",
           "status": "ok",
@@ -4377,6 +4429,32 @@
     "mysteries-of-deep-learning": {
       "versions": [
         {
+          "tree": "083944ff59f263f2be22fbc638d58de24e0cc4dc",
+          "status": "ok",
+          "pipeline": "d5fec17706ceed1fa028ca949b97b92dcc2f5f7e",
+          "commits": [
+            {
+              "sha": "915309854e4a69b5b494a33e66c87823ee0da528",
+              "date": "2026-10-11T09:07:29-07:00",
+              "subject": "Preserve unpublished worksheet notes outside downloads",
+              "author": "museiliad-bot"
+            }
+          ]
+        },
+        {
+          "tree": "ee629fea176a3f4700be35bb0af47472926ad79a",
+          "status": "ok",
+          "pipeline": "d5fec17706ceed1fa028ca949b97b92dcc2f5f7e",
+          "commits": [
+            {
+              "sha": "a7cceced822f2f04f64290496c31e787c1ddc919",
+              "date": "2026-10-11T09:07:28-07:00",
+              "subject": "Remove unpublished comments from worksheet downloads",
+              "author": "museiliad-bot"
+            }
+          ]
+        },
+        {
           "tree": "3c1e6a0f6b17478fe78e639d04cd1a0ed2aa1b1a",
           "status": "ok",
           "pipeline": "c1e5b24a037ce82de54e17b259e628394a11cda7",
@@ -5617,6 +5695,32 @@
     },
     "prerequisites": {
       "versions": [
+        {
+          "tree": "500df74bb6b700083082072c7ae35e30f317b278",
+          "status": "ok",
+          "pipeline": "d5fec17706ceed1fa028ca949b97b92dcc2f5f7e",
+          "commits": [
+            {
+              "sha": "1ad27681a2d0abf7fa68baf731284448a15a0d44",
+              "date": "2026-10-11T09:07:31-07:00",
+              "subject": "Preserve unpublished worksheet notes outside downloads",
+              "author": "museiliad-bot"
+            }
+          ]
+        },
+        {
+          "tree": "c86c2a8fc0e96af0052ac6dc9cdb784e90fd1add",
+          "status": "ok",
+          "pipeline": "d5fec17706ceed1fa028ca949b97b92dcc2f5f7e",
+          "commits": [
+            {
+              "sha": "bd1d046b79ffa5b3ede81b54d95cc80325aa3efb",
+              "date": "2026-10-11T09:07:30-07:00",
+              "subject": "Remove unpublished comments from worksheet downloads",
+              "author": "museiliad-bot"
+            }
+          ]
+        },
         {
           "tree": "cee99c7d68dd156116afe25953eb0015bc3e6bd5",
           "status": "ok",
@@ -7046,6 +7150,12 @@
           "status": "ok",
           "pipeline": "4fc100cc9ca0d794adb7eca094c0f4378861ed41",
           "commits": [
+            {
+              "sha": "d5fec17706ceed1fa028ca949b97b92dcc2f5f7e",
+              "date": "2026-10-09T19:34:57-07:00",
+              "subject": "Merge pull request #196 from museiliad-bot/muse/agency-errata-2026-10-10",
+              "author": "David Quarel"
+            },
             {
               "sha": "55e249feb3c1b44e74f115a594bde5b9af723e9d",
               "date": "2026-10-09T19:34:29-07:00",
