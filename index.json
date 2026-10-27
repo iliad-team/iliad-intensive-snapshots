@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-27T23:24:30.185Z",
-  "pipelineCommit": "fa8bc3a81be06ddf0b376f043fcbdb2b030807a2",
+  "generatedAt": "2026-10-27T23:27:20.485Z",
+  "pipelineCommit": "4acae5ba61c3018e73d89a7a7ae04c13c6203170",
   "pages": {
     "abstractions-and-latents": {
       "versions": [
@@ -189,6 +189,19 @@
     },
     "ai-alignment-intro": {
       "versions": [
+        {
+          "tree": "9359b084ba43d13c1a63d2700f40958c221d55ae",
+          "status": "ok",
+          "pipeline": "4acae5ba61c3018e73d89a7a7ae04c13c6203170",
+          "commits": [
+            {
+              "sha": "4acae5ba61c3018e73d89a7a7ae04c13c6203170",
+              "date": "2026-10-27T16:24:45-07:00",
+              "subject": "Update main.mdx",
+              "author": "Leon Lang"
+            }
+          ]
+        },
         {
           "tree": "5bdd43ab1738eb69a5bad25da54a26eba2051826",
           "status": "ok",
