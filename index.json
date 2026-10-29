@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-27T23:27:20.485Z",
-  "pipelineCommit": "4acae5ba61c3018e73d89a7a7ae04c13c6203170",
+  "generatedAt": "2026-10-29T00:45:51.949Z",
+  "pipelineCommit": "0f8bd63f68423d954cb83a6082689453c72c9f43",
   "pages": {
     "abstractions-and-latents": {
       "versions": [
@@ -3386,6 +3386,19 @@
     },
     "example": {
       "versions": [
+        {
+          "tree": "0d6675d88c4a43395b273de694b6126b5a79a537",
+          "status": "ok",
+          "pipeline": "0f8bd63f68423d954cb83a6082689453c72c9f43",
+          "commits": [
+            {
+              "sha": "0f8bd63f68423d954cb83a6082689453c72c9f43",
+              "date": "2026-10-28T17:38:27-07:00",
+              "subject": "License is updated.",
+              "author": "Leon Lang"
+            }
+          ]
+        },
         {
           "tree": "837e98d6ffdf381db9ef6638aacad9851b1c2b58",
           "status": "ok",
