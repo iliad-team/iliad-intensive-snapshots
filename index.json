@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-04T23:17:14.755Z",
+  "generatedAt": "2026-11-04T23:24:09.780Z",
   "pipelineCommit": "0f8bd63f68423d954cb83a6082689453c72c9f43",
   "pages": {
     "abstractions-and-latents": {
@@ -1235,6 +1235,19 @@
     },
     "alignment-in-practice": {
       "versions": [
+        {
+          "tree": "a70dd8415a761bab27ceba0bb330358d32a19274",
+          "status": "ok",
+          "pipeline": "0f8bd63f68423d954cb83a6082689453c72c9f43",
+          "commits": [
+            {
+              "sha": "61ff103c7b373f08f5f675cb33e2e63253ed2918",
+              "date": "2026-11-04T15:19:28-08:00",
+              "subject": "Replace A.2 with Margot's revised November attachment",
+              "author": "museiliad-bot"
+            }
+          ]
+        },
         {
           "tree": "9cb4f888c8c76892d9687eb672ff5b7e02fae8b7",
           "status": "ok",
