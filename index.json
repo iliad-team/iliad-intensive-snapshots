@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-29T00:45:51.949Z",
+  "generatedAt": "2026-11-04T23:17:14.755Z",
   "pipelineCommit": "0f8bd63f68423d954cb83a6082689453c72c9f43",
   "pages": {
     "abstractions-and-latents": {
@@ -1235,6 +1235,19 @@
     },
     "alignment-in-practice": {
       "versions": [
+        {
+          "tree": "9cb4f888c8c76892d9687eb672ff5b7e02fae8b7",
+          "status": "ok",
+          "pipeline": "0f8bd63f68423d954cb83a6082689453c72c9f43",
+          "commits": [
+            {
+              "sha": "f40bedb7e8519deaa3c0c28c70f3b7a345eb1966",
+              "date": "2026-11-04T15:14:10-08:00",
+              "subject": "Update A.2 from November author Markdown and link November slides",
+              "author": "museiliad-bot"
+            }
+          ]
+        },
         {
           "tree": "f26241bb58db1e24c2221821106172ee4cb03762",
           "status": "ok",
