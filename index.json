@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-04T23:24:09.780Z",
+  "generatedAt": "2026-11-05T00:20:29.149Z",
   "pipelineCommit": "0f8bd63f68423d954cb83a6082689453c72c9f43",
   "pages": {
     "abstractions-and-latents": {
@@ -1235,6 +1235,19 @@
     },
     "alignment-in-practice": {
       "versions": [
+        {
+          "tree": "8f4e01cf9d50f74176e59e89895f5b14415e3070",
+          "status": "ok",
+          "pipeline": "0f8bd63f68423d954cb83a6082689453c72c9f43",
+          "commits": [
+            {
+              "sha": "31854846446f88887da447bb71efcb31940199fa",
+              "date": "2026-11-04T15:21:14-08:00",
+              "subject": "Restore A.2 original slides folder link",
+              "author": "museiliad-bot"
+            }
+          ]
+        },
         {
           "tree": "a70dd8415a761bab27ceba0bb330358d32a19274",
           "status": "ok",
