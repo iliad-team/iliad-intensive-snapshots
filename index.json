@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-11-05T00:20:29.149Z",
-  "pipelineCommit": "0f8bd63f68423d954cb83a6082689453c72c9f43",
+  "generatedAt": "2026-11-06T05:23:16.469Z",
+  "pipelineCommit": "774369d1d990d5d3f6f87f4bb8deaabe9ee8b7a7",
   "pages": {
     "abstractions-and-latents": {
       "versions": [
@@ -1240,6 +1240,12 @@
           "status": "ok",
           "pipeline": "0f8bd63f68423d954cb83a6082689453c72c9f43",
           "commits": [
+            {
+              "sha": "774369d1d990d5d3f6f87f4bb8deaabe9ee8b7a7",
+              "date": "2026-11-05T16:45:30Z",
+              "subject": "Merge pull request #200 from museiliad-bot/muse/a2-november-2026",
+              "author": "Leon Lang"
+            },
             {
               "sha": "31854846446f88887da447bb71efcb31940199fa",
               "date": "2026-11-04T15:21:14-08:00",
@@ -4895,6 +4901,19 @@
     },
     "policy-gradients-misgeneralization": {
       "versions": [
+        {
+          "tree": "ddf3535369a6d295ac2b4430b4c85b45d43bd65d",
+          "status": "ok",
+          "pipeline": "774369d1d990d5d3f6f87f4bb8deaabe9ee8b7a7",
+          "commits": [
+            {
+              "sha": "b0074a6997a23043896d310e01004d9bacc74880",
+              "date": "2026-11-06T01:14:04Z",
+              "subject": "[D.2] Point the goal misgeneralisation coding to ARENA 2.3.2",
+              "author": "David Quarel"
+            }
+          ]
+        },
         {
           "tree": "3532851b2d8ea716048640629c1767ad492b4c8c",
           "status": "ok",
