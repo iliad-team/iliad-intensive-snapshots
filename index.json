@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-11-10T13:25:59.873Z",
-  "pipelineCommit": "774369d1d990d5d3f6f87f4bb8deaabe9ee8b7a7",
+  "generatedAt": "2026-11-10T15:22:16.233Z",
+  "pipelineCommit": "ea5626f92a6cc30a7d58b8bf2f149cf209652651",
   "pages": {
     "abstractions-and-latents": {
       "versions": [
@@ -589,10 +589,29 @@
     "aixi": {
       "versions": [
         {
+          "tree": "5aafa88b09ddbfd623f5d742b5bd2676678ede7d",
+          "status": "ok",
+          "pipeline": "ea5626f92a6cc30a7d58b8bf2f149cf209652651",
+          "commits": [
+            {
+              "sha": "e0acafd1ac61bf39663a46b060f268c4f192dd14",
+              "date": "2026-11-10T15:14:27Z",
+              "subject": "AIXI slides: compress References to one 4-column frame",
+              "author": "David Quarel"
+            }
+          ]
+        },
+        {
           "tree": "c632042adfa994dc892f022d415d1281b03773a4",
           "status": "ok",
           "pipeline": "774369d1d990d5d3f6f87f4bb8deaabe9ee8b7a7",
           "commits": [
+            {
+              "sha": "ea5626f92a6cc30a7d58b8bf2f149cf209652651",
+              "date": "2026-11-10T13:58:49+01:00",
+              "subject": "Merge pull request #202 from iliad-team/aixi-slides-safety",
+              "author": "David Quarel"
+            },
             {
               "sha": "993e82aa3f5df712be3e0876bcbc51facc2336a1",
               "date": "2026-11-10T12:55:55Z",
