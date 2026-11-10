@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-06T05:23:16.469Z",
+  "generatedAt": "2026-11-10T13:25:59.873Z",
   "pipelineCommit": "774369d1d990d5d3f6f87f4bb8deaabe9ee8b7a7",
   "pages": {
     "abstractions-and-latents": {
@@ -588,6 +588,19 @@
     },
     "aixi": {
       "versions": [
+        {
+          "tree": "c632042adfa994dc892f022d415d1281b03773a4",
+          "status": "ok",
+          "pipeline": "774369d1d990d5d3f6f87f4bb8deaabe9ee8b7a7",
+          "commits": [
+            {
+              "sha": "993e82aa3f5df712be3e0876bcbc51facc2336a1",
+              "date": "2026-11-10T12:55:55Z",
+              "subject": "AIXI slides: fix self-optimizing theorem, expand safety section",
+              "author": "David Quarel"
+            }
+          ]
+        },
         {
           "tree": "184be1127afae66d16465983d52d798391e7995c",
           "status": "ok",
