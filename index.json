@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-11-10T15:22:16.233Z",
-  "pipelineCommit": "ea5626f92a6cc30a7d58b8bf2f149cf209652651",
+  "generatedAt": "2026-11-12T15:18:35.127Z",
+  "pipelineCommit": "b3705a24ca68b39382cc58057547aedf830657ff",
   "pages": {
     "abstractions-and-latents": {
       "versions": [
@@ -593,6 +593,18 @@
           "status": "ok",
           "pipeline": "ea5626f92a6cc30a7d58b8bf2f149cf209652651",
           "commits": [
+            {
+              "sha": "ab1bd8dc01a67156234004bb2729f70a048cc156",
+              "date": "2026-11-10T17:23:48+01:00",
+              "subject": "Merge pull request #203 from iliad-team/aixi-slides-compact-refs",
+              "author": "David Quarel"
+            },
+            {
+              "sha": "f480880ef63a77d3b72c9954531b2362e44d7f41",
+              "date": "2026-11-10T16:27:03Z",
+              "subject": "slides aixi update",
+              "author": "David Quarel"
+            },
             {
               "sha": "e0acafd1ac61bf39663a46b060f268c4f192dd14",
               "date": "2026-11-10T15:14:27Z",
@@ -4939,6 +4951,12 @@
           "pipeline": "774369d1d990d5d3f6f87f4bb8deaabe9ee8b7a7",
           "commits": [
             {
+              "sha": "b3705a24ca68b39382cc58057547aedf830657ff",
+              "date": "2026-11-12T16:08:27+01:00",
+              "subject": "Merge pull request #201 from iliad-team/d2-goal-misgen-to-arena-claude",
+              "author": "David Quarel"
+            },
+            {
               "sha": "b0074a6997a23043896d310e01004d9bacc74880",
               "date": "2026-11-06T01:14:04Z",
               "subject": "[D.2] Point the goal misgeneralisation coding to ARENA 2.3.2",
@@ -6261,6 +6279,19 @@
     },
     "reinforcement-learning": {
       "versions": [
+        {
+          "tree": "eec026c05e43cb1902e6aab05dc463b54f7d7074",
+          "status": "ok",
+          "pipeline": "b3705a24ca68b39382cc58057547aedf830657ff",
+          "commits": [
+            {
+              "sha": "a8fef1b947e6030eb9f6946936c758ed30f09adf",
+              "date": "2026-11-12T15:12:40Z",
+              "subject": "RL: replace in-repo deck with link to ARENA 2.1 slides",
+              "author": "David Quarel"
+            }
+          ]
+        },
         {
           "tree": "a92e4273dd7eac9d7e74495c9528481869a57260",
           "status": "ok",
