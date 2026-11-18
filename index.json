@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-11-12T15:18:35.127Z",
-  "pipelineCommit": "b3705a24ca68b39382cc58057547aedf830657ff",
+  "generatedAt": "2026-11-18T18:13:49.459Z",
+  "pipelineCommit": "34011715880350ff1670ce0c9ca43a573eb441d0",
   "pages": {
     "abstractions-and-latents": {
       "versions": [
@@ -189,6 +189,19 @@
     },
     "ai-alignment-intro": {
       "versions": [
+        {
+          "tree": "192d25c04da50f7a6f2491db4bd36e2f73748838",
+          "status": "ok",
+          "pipeline": "34011715880350ff1670ce0c9ca43a573eb441d0",
+          "commits": [
+            {
+              "sha": "e441448beb9deaaecd9eca55455d14b628a143db",
+              "date": "2026-11-18T17:28:22Z",
+              "subject": "Added Margot Stakenborg to the credits",
+              "author": "Leon Lang"
+            }
+          ]
+        },
         {
           "tree": "9359b084ba43d13c1a63d2700f40958c221d55ae",
           "status": "ok",
@@ -6284,6 +6297,12 @@
           "status": "ok",
           "pipeline": "b3705a24ca68b39382cc58057547aedf830657ff",
           "commits": [
+            {
+              "sha": "34011715880350ff1670ce0c9ca43a573eb441d0",
+              "date": "2026-11-12T16:28:51+01:00",
+              "subject": "Merge pull request #204 from iliad-team/rl-arena-slides-claude",
+              "author": "David Quarel"
+            },
             {
               "sha": "a8fef1b947e6030eb9f6946936c758ed30f09adf",
               "date": "2026-11-12T15:12:40Z",
