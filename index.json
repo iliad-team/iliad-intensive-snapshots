@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-11-18T18:13:49.459Z",
-  "pipelineCommit": "34011715880350ff1670ce0c9ca43a573eb441d0",
+  "generatedAt": "2026-11-27T14:09:34.536Z",
+  "pipelineCommit": "14ab6a4e04e32f4fb893a1df022f80313e2e5a23",
   "pages": {
     "abstractions-and-latents": {
       "versions": [
@@ -194,6 +194,12 @@
           "status": "ok",
           "pipeline": "34011715880350ff1670ce0c9ca43a573eb441d0",
           "commits": [
+            {
+              "sha": "14ab6a4e04e32f4fb893a1df022f80313e2e5a23",
+              "date": "2026-11-18T17:44:36Z",
+              "subject": "Merge pull request #205 from iliad-team/a1-intro-add-margot",
+              "author": "Leon Lang"
+            },
             {
               "sha": "e441448beb9deaaecd9eca55455d14b628a143db",
               "date": "2026-11-18T17:28:22Z",
@@ -6029,6 +6035,19 @@
     },
     "qft": {
       "versions": [
+        {
+          "tree": "5b4db1686ace8107f4270682c1dd5a84da0ece61",
+          "status": "ok",
+          "pipeline": "14ab6a4e04e32f4fb893a1df022f80313e2e5a23",
+          "commits": [
+            {
+              "sha": "ad738310a4bdf55765c539d6db91a4cf1d0911b5",
+              "date": "2026-11-12T09:23:59-08:00",
+              "subject": "qft: update the slide deck from the revised Part I-III decks",
+              "author": "tdimofte"
+            }
+          ]
+        },
         {
           "tree": "c06a18fd297d0872489ff2d777f7c3f8b07f934b",
           "status": "ok",
