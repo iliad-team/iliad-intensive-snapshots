@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-11-27T16:42:04.873Z",
-  "pipelineCommit": "132fcda2ba3a2d81fbf5c901e6b3b47b94d02bab",
+  "generatedAt": "2026-11-27T17:55:16.427Z",
+  "pipelineCommit": "8a48a01e52cc583d796dbe31b247b05a99229a5a",
   "pages": {
     "abstractions-and-latents": {
       "versions": [
@@ -1787,6 +1787,12 @@
           "status": "ok",
           "pipeline": "132fcda2ba3a2d81fbf5c901e6b3b47b94d02bab",
           "commits": [
+            {
+              "sha": "8a48a01e52cc583d796dbe31b247b05a99229a5a",
+              "date": "2026-11-27T16:39:57Z",
+              "subject": "Merge pull request #211 from iliad-team/c3-compmech-link-charles-notebooks",
+              "author": "Leon Lang"
+            },
             {
               "sha": "0e23da0afd958886297c679a4c02d6dd14b8b4a4",
               "date": "2026-11-27T16:39:08Z",
@@ -8169,6 +8175,19 @@
     },
     "training-dynamics": {
       "versions": [
+        {
+          "tree": "3235f06bbe17160bbc98d694a744ca98391bf9e2",
+          "status": "ok",
+          "pipeline": "8a48a01e52cc583d796dbe31b247b05a99229a5a",
+          "commits": [
+            {
+              "sha": "fdb9d8074d15ee804bf1bbece304fb9126ae9a87",
+              "date": "2026-11-27T17:52:29Z",
+              "subject": "Add in Daniel Kunin's materials",
+              "author": "Leon Lang"
+            }
+          ]
+        },
         {
           "tree": "85dbc6420c48207d1ca3a9791c2369ebc55672bd",
           "status": "ok",
