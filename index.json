@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-11-27T15:21:45.863Z",
-  "pipelineCommit": "fa1d3e4148c2db4bcd3dc3a0635e0aac03ba948c",
+  "generatedAt": "2026-11-27T15:45:19.260Z",
+  "pipelineCommit": "e39a3037322688d586e550365dddfafbf3f444be",
   "pages": {
     "abstractions-and-latents": {
       "versions": [
@@ -6726,6 +6726,12 @@
           "pipeline": "fa1d3e4148c2db4bcd3dc3a0635e0aac03ba948c",
           "commits": [
             {
+              "sha": "e39a3037322688d586e550365dddfafbf3f444be",
+              "date": "2026-11-27T15:19:52Z",
+              "subject": "Merge pull request #208 from iliad-team/b3-slt-llc-estimation-exercise",
+              "author": "Leon Lang"
+            },
+            {
               "sha": "15ffeb374fa9138ba0a9d94d6b0d8549d27a6cd9",
               "date": "2026-11-27T15:18:25Z",
               "subject": "Make Miguel's changes",
@@ -7945,6 +7951,19 @@
     },
     "steganography": {
       "versions": [
+        {
+          "tree": "6b03679b41388b1eb42da64eb3bc127ce8c64365",
+          "status": "ok",
+          "pipeline": "e39a3037322688d586e550365dddfafbf3f444be",
+          "commits": [
+            {
+              "sha": "d37329a34e57d53a3e45ba871979f464a96c59aa",
+              "date": "2026-11-27T15:41:38Z",
+              "subject": "Add Julian's content to the steganography day",
+              "author": "Leon Lang"
+            }
+          ]
+        },
         {
           "tree": "c3c810b7c7b94a23d0d007fef1e0d03ce617631b",
           "status": "ok",
