@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-11-27T16:31:46.642Z",
-  "pipelineCommit": "f56fd72df9b0046aabc5123f84123a7a636fd6fc",
+  "generatedAt": "2026-11-27T16:42:04.873Z",
+  "pipelineCommit": "132fcda2ba3a2d81fbf5c901e6b3b47b94d02bab",
   "pages": {
     "abstractions-and-latents": {
       "versions": [
@@ -1782,6 +1782,19 @@
     },
     "computational-mechanics": {
       "versions": [
+        {
+          "tree": "8d45ec6fde71aac591707ccec14964619e0a3a51",
+          "status": "ok",
+          "pipeline": "132fcda2ba3a2d81fbf5c901e6b3b47b94d02bab",
+          "commits": [
+            {
+              "sha": "0e23da0afd958886297c679a4c02d6dd14b8b4a4",
+              "date": "2026-11-27T16:39:08Z",
+              "subject": "Merge in Computational Mechanics materials by Charles.",
+              "author": "Leon Lang"
+            }
+          ]
+        },
         {
           "tree": "03216b3fd7bbf88a14cbb7597bc02a779a925b13",
           "status": "ok",
@@ -4567,6 +4580,12 @@
           "status": "ok",
           "pipeline": "f56fd72df9b0046aabc5123f84123a7a636fd6fc",
           "commits": [
+            {
+              "sha": "132fcda2ba3a2d81fbf5c901e6b3b47b94d02bab",
+              "date": "2026-11-27T16:29:03Z",
+              "subject": "Merge pull request #210 from iliad-team/b2-mysteries-link-charles-workbooks",
+              "author": "Leon Lang"
+            },
             {
               "sha": "75493bdecca9189134ad95ae2b029cb1efdbf8e3",
               "date": "2026-11-27T16:25:26Z",
