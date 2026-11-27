@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-11-27T15:45:19.260Z",
-  "pipelineCommit": "e39a3037322688d586e550365dddfafbf3f444be",
+  "generatedAt": "2026-11-27T16:31:46.642Z",
+  "pipelineCommit": "f56fd72df9b0046aabc5123f84123a7a636fd6fc",
   "pages": {
     "abstractions-and-latents": {
       "versions": [
@@ -4563,6 +4563,19 @@
     "mysteries-of-deep-learning": {
       "versions": [
         {
+          "tree": "837486253dacce9002dbaf2d735598a20c797528",
+          "status": "ok",
+          "pipeline": "f56fd72df9b0046aabc5123f84123a7a636fd6fc",
+          "commits": [
+            {
+              "sha": "75493bdecca9189134ad95ae2b029cb1efdbf8e3",
+              "date": "2026-11-27T16:25:26Z",
+              "subject": "Mysteries of DL: merge in Charle's content",
+              "author": "Leon Lang"
+            }
+          ]
+        },
+        {
           "tree": "549e9da188c2408b8225d0827d93da3bcf38f11c",
           "status": "ok",
           "pipeline": "99b9622c55bf843f46aa222718298107e4f33674",
@@ -7956,6 +7969,12 @@
           "status": "ok",
           "pipeline": "e39a3037322688d586e550365dddfafbf3f444be",
           "commits": [
+            {
+              "sha": "f56fd72df9b0046aabc5123f84123a7a636fd6fc",
+              "date": "2026-11-27T15:42:37Z",
+              "subject": "Merge pull request #209 from iliad-team/e2-steganography-schulz-deck",
+              "author": "Leon Lang"
+            },
             {
               "sha": "d37329a34e57d53a3e45ba871979f464a96c59aa",
               "date": "2026-11-27T15:41:38Z",
