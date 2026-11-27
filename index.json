@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-11-27T14:59:10.616Z",
-  "pipelineCommit": "99b9622c55bf843f46aa222718298107e4f33674",
+  "generatedAt": "2026-11-27T15:21:45.863Z",
+  "pipelineCommit": "fa1d3e4148c2db4bcd3dc3a0635e0aac03ba948c",
   "pages": {
     "abstractions-and-latents": {
       "versions": [
@@ -4568,6 +4568,12 @@
           "pipeline": "99b9622c55bf843f46aa222718298107e4f33674",
           "commits": [
             {
+              "sha": "fa1d3e4148c2db4bcd3dc3a0635e0aac03ba948c",
+              "date": "2026-11-27T14:57:27Z",
+              "subject": "Merge pull request #207 from iliad-team/b2-mysteries-august-slides",
+              "author": "Leon Lang"
+            },
+            {
               "sha": "707a60ecca0f93ca2f00510f7a3471f5ca5fb421",
               "date": "2026-11-27T14:56:02Z",
               "subject": "Added Zach's August slides",
@@ -6714,6 +6720,19 @@
     },
     "singular-learning-theory": {
       "versions": [
+        {
+          "tree": "4a9afb33a80c8aca38050b3cf55e6361b78f52ce",
+          "status": "ok",
+          "pipeline": "fa1d3e4148c2db4bcd3dc3a0635e0aac03ba948c",
+          "commits": [
+            {
+              "sha": "15ffeb374fa9138ba0a9d94d6b0d8549d27a6cd9",
+              "date": "2026-11-27T15:18:25Z",
+              "subject": "Make Miguel's changes",
+              "author": "Leon Lang"
+            }
+          ]
+        },
         {
           "tree": "a799921c2e38524fac5776845508a67144cd4921",
           "status": "ok",
